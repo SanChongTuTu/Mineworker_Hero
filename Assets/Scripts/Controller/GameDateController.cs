@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class GameDateController : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-        //123
+        
     }
 
     // Update is called once per frame
