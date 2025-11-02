@@ -85,6 +85,7 @@ public class PlayerSet : MonoBehaviour
             setbtn.onClick.AddListener(() =>
             {
                 sets.SetActive(true);
+                Time.timeScale = 0;
             });
         }
 
@@ -169,5 +170,11 @@ public class PlayerSet : MonoBehaviour
         {
             voiceeffectslider.value = 1;
         }
+    }
+
+    public void CloseSet()
+    {
+        sets.SetActive(false);
+        Time.timeScale = 1;
     }
 }

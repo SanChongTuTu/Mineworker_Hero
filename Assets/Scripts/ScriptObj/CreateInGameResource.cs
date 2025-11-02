@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "InGameResource", menuName = "CreateDate/InGameResource", order = 0)]
-public class InGameResource : ScriptableObject
+public class CreateInGameResource : ScriptableObject
 {
     [Header("ID")]
     public int id;

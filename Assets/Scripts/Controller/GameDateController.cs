@@ -10,7 +10,7 @@ public class GameDateController : MonoBehaviour
     {
         private int mask;
         private int check;
-        public InGameResource resource;
+        public CreateInGameResource resource;
         public int num;
         public int realnum
         {
@@ -19,7 +19,7 @@ public class GameDateController : MonoBehaviour
                 int v=mask^Game.IntMask;
                 if (v + 0x47 != check)
                 {
-
+                    Game.ExitGame();
                 }
                 return v;
             }
@@ -30,7 +30,7 @@ public class GameDateController : MonoBehaviour
             }
         }
 
-        public void SetAResource(InGameResource res, int amount)
+        public void SetAResource(CreateInGameResource res, int amount)
         {
             resource = res;
             mask = 0;
@@ -79,7 +79,7 @@ public class GameDateController : MonoBehaviour
 
     void Start()
     {
-        var scriptobj=Resources.FindObjectsOfTypeAll<InGameResource>();
+        var scriptobj=Resources.FindObjectsOfTypeAll<CreateInGameResource>();
         foreach(var obj in scriptobj)
         {
             if (obj.hideFlags == HideFlags.HideAndDontSave) continue;

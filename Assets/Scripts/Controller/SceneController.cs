@@ -4,13 +4,29 @@ using UnityEngine;
 
 public class SceneController : MonoBehaviour
 {
-    // Start is called before the first frame update
+
+    private static SceneController instance;
+    public static SceneController Instance
+    {
+        get
+        {
+            if (instance == null)
+            {
+                instance = FindObjectOfType<SceneController>();
+                if (instance == null)
+                {
+                    Debug.Log("No SceneController");
+                }
+            }
+            return instance;
+        }
+    }
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         
