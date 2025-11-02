@@ -3,35 +3,35 @@ using UnityEngine.UI;
 
 public class PlayerSet : MonoBehaviour
 {
-    [Header("ÉèÖÃ½çÃæ")]
+    [Header("ï¿½ï¿½ï¿½Ã½ï¿½ï¿½ï¿½")]
     public GameObject sets;
-    [Header("·µ»ØÖ÷²Ëµ¥È·ÈÏ½çÃæ")]
+    [Header("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ëµï¿½È·ï¿½Ï½ï¿½ï¿½ï¿½")]
     public GameObject ifbackhome;
-    [Header("´ò¿ªÒôÁ¿Í¼±ê")]
+    [Header("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½")]
     public Sprite openvoice;
-    [Header("¹Ø±ÕÒôÁ¿Í¼±ê")]
+    [Header("ï¿½Ø±ï¿½ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½")]
     public Sprite closevoice;
 
-    [Header("×ÜÒôÁ¿")]
+    [Header("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½")]
     [Range(0, 100)]
     public float totalvolumn;
     public bool istotalvolumn;
-    [Header("ÓÎÏ·±³¾°ÒôÀÖ")]
+    [Header("ï¿½ï¿½Ï·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½")]
     [Range(0, 100)]
     public float volumn;
     public bool isvolumn;
-    [Header("ÒôĞ§")]
+    [Header("ï¿½ï¿½Ğ§")]
     [Range(0, 100)]
     public float voiceeffect;
     public bool isvoiceeffect;
 
-    private Button setbtn;//³¡¾°ÄÚÉèÖÃ°´Å¥
-    private Slider totalvolumnslider;//×ÜÒôÁ¿»¬¶¯Ìõ
-    private Slider volumnslider;//±³¾°ÒôÀÖ»¬¶¯Ìõ
-    private Slider voiceeffectslider;//ÒôĞ§»¬¶¯Ìõ
-    private Button istotalvolumnbutton;//×ÜÒôÁ¿Ò»¼ü¾²Òô°´Å¥
-    private Button isvolumnbutton;//±³¾°ÒôÀÖÒ»¼ü¾²Òô°´Å¥
-    private Button isvoiceeffectbutton;//ÒôĞ§Ò»¼ü¾²Òô°´Å¥
+    private Button setbtn;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã°ï¿½Å¥
+    private Slider totalvolumnslider;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    private Slider volumnslider;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö»ï¿½ï¿½ï¿½ï¿½ï¿½
+    private Slider voiceeffectslider;//ï¿½ï¿½Ğ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    private Button istotalvolumnbutton;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¥
+    private Button isvolumnbutton;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¥
+    private Button isvoiceeffectbutton;//ï¿½ï¿½Ğ§Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¥
 
     private static PlayerSet instance;
     public static PlayerSet Instance
