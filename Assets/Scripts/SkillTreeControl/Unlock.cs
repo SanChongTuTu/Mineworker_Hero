@@ -26,6 +26,8 @@ public class Unlock : MonoBehaviour
 
     private int _powerCrystalNumber;
     
+    private ShowInfo _showInfo;
+    
     private void RefreshCurrencyUI()
     {
         if (globalCrystalText == null) return;
@@ -74,6 +76,15 @@ public class Unlock : MonoBehaviour
             FileHandler.SaveToJSON<PowerCrystalInputEntry>(powerCrystalEntries, crystalFileName);
             RefreshCurrencyUI();
             Debug.Log($"Spent {unlockCost} crystals. Remaining: {crystalEntry.number}");
+            // 1. Load the current list of unlocked skills
+            List<SkillActiveInputEntry> skillList = FileHandler.LoadFromJSON<SkillActiveInputEntry>(fileName);
+
+            SkillActiveInputEntry newSkillEntry = new SkillActiveInputEntry(skill.name, true);
+            
+            skillList.Add(newSkillEntry);
+            FileHandler.SaveToJSON<SkillActiveInputEntry>(skillList, fileName);
+
+            Debug.Log($"{skill.name} has been successfully unlocked and saved to {fileName}!");
         }
         else
         {
@@ -99,13 +110,13 @@ public class Unlock : MonoBehaviour
             
             if (unlockCost > 0)
             {
-                List<PowerCrystalInputEntry> powerCrystalEntries = FileHandler.LoadFromJSON<PowerCrystalInputEntry>(fileName);
+                List<PowerCrystalInputEntry> powerCrystalEntries = FileHandler.LoadFromJSON<PowerCrystalInputEntry>(crystalFileName);
                 var crystalEntry = powerCrystalEntries.FirstOrDefault();
                 
                 if (crystalEntry != null)
                 {
                     crystalEntry.number += unlockCost;
-                    FileHandler.SaveToJSON<PowerCrystalInputEntry>(powerCrystalEntries, fileName);
+                    FileHandler.SaveToJSON<PowerCrystalInputEntry>(powerCrystalEntries, crystalFileName);
                     Debug.Log($"Refunded {unlockCost} crystals. New Total: {crystalEntry.number}");
                     RefreshCurrencyUI();
                 }
@@ -121,6 +132,12 @@ public class Unlock : MonoBehaviour
                 if (childUnlockScript != null)
                 {
                     childUnlockScript.LockSkill();
+                }
+                
+                ShowInfo childInfoScript = child.GetComponent<ShowInfo>();
+                if (childInfoScript != null)
+                { 
+                    childInfoScript.UpdateSmallIcon();
                 }
             }
         }

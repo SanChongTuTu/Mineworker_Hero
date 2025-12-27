@@ -13,6 +13,7 @@ public class ShowInfo : MonoBehaviour
     
     public Image logo;
     public Sprite icon;
+    public Image smallIcon;
     public TMP_Text titleText;
     public TMP_Text descriptionText;
     public TMP_Text statusText;
@@ -67,10 +68,30 @@ public class ShowInfo : MonoBehaviour
         {
             statusText.text = disabledText;
             logo.material = grayscaleMaterial; 
+            smallIcon.material = grayscaleMaterial;
             return;
         }
         
         statusText.text = enabledText;
         logo.material = null;
+        smallIcon.material = null;
+    }
+
+    public void UpdateSmallIcon()
+    {
+        List<SkillActiveInputEntry> entries = FileHandler.LoadFromJSON<SkillActiveInputEntry>(fileName);
+        var existingEntry = entries.FirstOrDefault(s => s.skillName == skill.name);
+        
+        if (existingEntry == null || !existingEntry.isActive)
+        {
+            smallIcon.material = grayscaleMaterial;
+            return;
+        }
+        smallIcon.material = null;
+    }
+
+    private void Start()
+    {
+        smallIcon.material = grayscaleMaterial;
     }
 }

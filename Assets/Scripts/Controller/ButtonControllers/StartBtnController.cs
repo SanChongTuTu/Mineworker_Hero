@@ -5,15 +5,15 @@ using UnityEngine.UI;
 
 public class StartBtnController : MonoBehaviour
 {
-    [Header("¿ªÊ¼ÓÎÏ·°´Å¥")]
+    [Header("ï¿½ï¿½Ê¼ï¿½ï¿½Ï·ï¿½ï¿½Å¥")]
     public Button startBtn;
-    [Header("ÓÎÏ·ËµÃ÷°´Å¥")]
+    [Header("ï¿½ï¿½Ï·Ëµï¿½ï¿½ï¿½ï¿½Å¥")]
     public Button illustratedBtn;
-    [Header("ÍË³öÓÎÏ·°´Å¥")]
+    [Header("ï¿½Ë³ï¿½ï¿½ï¿½Ï·ï¿½ï¿½Å¥")]
     public Button exitgameBtn;
-    [Header("Í¼¼ø°´Å¥")]
+    [Header("Í¼ï¿½ï¿½ï¿½ï¿½Å¥")]
     public Button atlasBtn;
-    //[Header("ÉèÖÃ°´Å¥")]
+    //[Header("ï¿½ï¿½ï¿½Ã°ï¿½Å¥")]
     //public Button setBtn;
 
     private static StartBtnController instance;
@@ -40,6 +40,12 @@ public class StartBtnController : MonoBehaviour
         exitgameBtn.onClick.AddListener(OnExitGameBtnClick);
         atlasBtn.onClick.AddListener(OnAtlasBtnClick);
         //setBtn.onClick.AddListener(OnSetBtnClick);
+        
+        //Initialize PC
+        PowerCrystalManager.InitializeFile("powerCrystalStats.json", 0);
+        
+        //Cheat PC
+        //PowerCrystalManager.AddCrystals("powerCrystalStats.json", 500);
     }
 
     public void OnStartBtnClick()

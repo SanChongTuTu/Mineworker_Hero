@@ -633,6 +633,7 @@ MonoBehaviour:
   crystalFileName: powerCrystalStats.json
   logo: {fileID: 1661255645}
   icon: {fileID: 21300000, guid: aef0173f99a7afd49ad843a9d6837f50, type: 3}
+  smallIcon: {fileID: 467292095}
   titleText: {fileID: 1422964597}
   descriptionText: {fileID: 1455280641}
   statusText: {fileID: 467043702}
@@ -981,6 +982,7 @@ MonoBehaviour:
   crystalFileName: powerCrystalStats.json
   logo: {fileID: 1661255645}
   icon: {fileID: 21300000, guid: 174b90480b9c3114999f08e06ca3e5b6, type: 3}
+  smallIcon: {fileID: 35464657}
   titleText: {fileID: 1422964597}
   descriptionText: {fileID: 1455280641}
   statusText: {fileID: 467043702}
@@ -1125,6 +1127,7 @@ MonoBehaviour:
   crystalFileName: powerCrystalStats.json
   logo: {fileID: 1661255645}
   icon: {fileID: 21300000, guid: 8a059fa6e95eff7499fb67bb2b60d595, type: 3}
+  smallIcon: {fileID: 1389857059}
   titleText: {fileID: 1422964597}
   descriptionText: {fileID: 1455280641}
   statusText: {fileID: 467043702}
@@ -1281,6 +1284,7 @@ MonoBehaviour:
   crystalFileName: powerCrystalStats.json
   logo: {fileID: 1661255645}
   icon: {fileID: 21300000, guid: a0a5b98754cdb92429743e47023d5f72, type: 3}
+  smallIcon: {fileID: 1384523471}
   titleText: {fileID: 1422964597}
   descriptionText: {fileID: 1455280641}
   statusText: {fileID: 467043702}
@@ -4408,6 +4412,7 @@ MonoBehaviour:
   crystalFileName: powerCrystalStats.json
   logo: {fileID: 1661255645}
   icon: {fileID: 21300000, guid: 9d290e75f4a9b694eacc8df6d7b3825b, type: 3}
+  smallIcon: {fileID: 1395661264}
   titleText: {fileID: 1422964597}
   descriptionText: {fileID: 1455280641}
   statusText: {fileID: 467043702}
@@ -5322,6 +5327,7 @@ MonoBehaviour:
   crystalFileName: powerCrystalStats.json
   logo: {fileID: 1661255645}
   icon: {fileID: 21300000, guid: 14c8231b7cfb00049aa161e25513b119, type: 3}
+  smallIcon: {fileID: 822373882}
   titleText: {fileID: 1422964597}
   descriptionText: {fileID: 1455280641}
   statusText: {fileID: 467043702}
@@ -8154,6 +8160,7 @@ MonoBehaviour:
   crystalFileName: powerCrystalStats.json
   logo: {fileID: 1661255645}
   icon: {fileID: 21300000, guid: 443d6441297cff347bdd3ff8c54f29bf, type: 3}
+  smallIcon: {fileID: 1035993560}
   titleText: {fileID: 1422964597}
   descriptionText: {fileID: 1455280641}
   statusText: {fileID: 467043702}
@@ -8440,6 +8447,7 @@ MonoBehaviour:
   crystalFileName: powerCrystalStats.json
   logo: {fileID: 1661255645}
   icon: {fileID: 21300000, guid: 588f41f7b7926974e8d3866394287149, type: 3}
+  smallIcon: {fileID: 1039362547}
   titleText: {fileID: 1422964597}
   descriptionText: {fileID: 1455280641}
   statusText: {fileID: 467043702}
@@ -8595,6 +8603,7 @@ MonoBehaviour:
   crystalFileName: powerCrystalStats.json
   logo: {fileID: 1661255645}
   icon: {fileID: 21300000, guid: 16894dbcb0f48d247a1ce9e5daaa9d67, type: 3}
+  smallIcon: {fileID: 632416423}
   titleText: {fileID: 1422964597}
   descriptionText: {fileID: 1455280641}
   statusText: {fileID: 467043702}
