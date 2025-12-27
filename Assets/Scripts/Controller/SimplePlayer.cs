@@ -84,10 +84,17 @@ public class SimplePlayer : MonoBehaviour
 
     void HandleMovement()
     {
-        float h = Input.GetAxis("Horizontal");
+        if(Input.GetKey(KeyCode.A)||Input.GetKey(KeyCode.D))
+        {
+            float h = Input.GetAxis("Horizontal");
 
-        // 使用当前实际移动速度
-        rb.velocity = new Vector2(h * currentMoveSpeed, rb.velocity.y);
+            // 使用当前实际移动速度
+            rb.velocity = new Vector2(h * currentMoveSpeed, rb.velocity.y);
+        }
+        else
+        {
+            rb.velocity = new Vector2(0, rb.velocity.y);
+        }
     }
 
     void UpdateMoveSpeedFromController()

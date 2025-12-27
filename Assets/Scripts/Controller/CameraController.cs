@@ -4,6 +4,8 @@ public class CameraController : MonoBehaviour
 {
     public static CameraController Instance;
 
+    public GameObject battles;
+
     [Header("跟随设置")]
     public Transform player;
     public float smoothSpeed = 0.125f;
@@ -42,6 +44,7 @@ public class CameraController : MonoBehaviour
         cam = GetComponent<Camera>();
         originalSize = cam.orthographicSize;
         fixedXPosition = transform.position.x;
+        battles.SetActive(false);
     }
 
     void LateUpdate()
@@ -88,6 +91,7 @@ public class CameraController : MonoBehaviour
             Debug.Log("相机已到达Y=-25");
         }
         PlayerBattleController.Instance.enabled = true;
+        battles.SetActive(true);
     }
 
     public void SetFixedXPosition(float xPosition)
