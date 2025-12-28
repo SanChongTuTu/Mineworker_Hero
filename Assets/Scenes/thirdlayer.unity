@@ -172,6 +172,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &3521745
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -319,6 +321,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &8518731
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -511,6 +515,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &12889258
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -613,6 +619,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &21102281
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -760,6 +768,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &22992933
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -907,6 +917,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &24652758
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1054,6 +1066,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &26056000
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1246,6 +1260,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &27267542
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1348,6 +1364,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &28734609
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1495,6 +1513,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &44589150
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1687,6 +1707,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &54253307
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1789,6 +1811,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &55565198
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1981,6 +2005,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &55986443
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2083,6 +2109,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &59531648
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2230,6 +2258,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &60684398
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2377,6 +2407,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &61320153
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2524,6 +2556,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &61633158
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2671,6 +2705,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &65141638
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2818,6 +2854,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &70980196
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3010,6 +3048,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &71542523
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3112,6 +3152,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &73299069
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3259,6 +3301,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &76094778
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3451,6 +3495,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &81093116
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3598,6 +3644,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &85450746
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3700,6 +3748,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &85659826
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3847,6 +3897,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &86273923
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4039,6 +4091,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &86856760
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4141,6 +4195,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &87246685
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4333,6 +4389,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &87974128
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4480,6 +4538,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &89950817
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4582,6 +4642,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &93344893
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4774,6 +4836,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &95611963
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4876,6 +4940,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &97629875
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5023,6 +5089,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &120866374
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5215,6 +5283,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &120917643
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5362,6 +5432,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &123062335
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5509,6 +5581,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &123280799
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5656,6 +5730,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &123570360
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5758,6 +5834,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &124970838
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5950,6 +6028,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &128832279
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6097,6 +6177,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &129278166
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6199,6 +6281,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &135429226
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6391,6 +6475,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &137741285
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6538,6 +6624,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &139493417
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6640,6 +6728,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &141121624
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6832,6 +6922,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &142441273
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6979,6 +7071,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &143367773
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7126,6 +7220,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &152271333
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7386,6 +7482,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &155758805
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7488,6 +7586,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &157246395
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7680,6 +7780,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &160220302
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7827,6 +7929,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &161905079
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7974,6 +8078,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &165605288
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8076,6 +8182,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &171434719
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8223,6 +8331,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &176378799
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8415,6 +8525,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &177722809
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8562,6 +8674,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &178359136
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8664,6 +8778,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &182279234
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8856,6 +8972,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &185123388
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9003,6 +9121,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &185543635
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9150,6 +9270,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &188638321
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9297,6 +9419,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &188699323
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9444,6 +9568,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &193302174
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9591,6 +9717,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &193533037
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9738,6 +9866,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &195277411
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9885,6 +10015,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &199572441
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9987,6 +10119,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &201678033
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10134,6 +10268,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &210203097
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10326,6 +10462,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &211454906
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10428,6 +10566,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &213239856
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10575,6 +10715,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &215057276
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10767,6 +10909,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &222254853
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10982,6 +11126,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &230928089
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11129,6 +11275,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &230942629
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11276,6 +11424,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &231015195
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11423,6 +11573,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &232960384
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11570,6 +11722,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &232980470
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11672,6 +11826,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &236319727
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11864,6 +12020,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &240792544
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11966,6 +12124,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &241437630
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12158,6 +12318,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &246395835
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12305,6 +12467,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &248298683
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12452,6 +12616,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &250995796
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12599,6 +12765,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &253135856
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12701,6 +12869,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &253737852
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12893,6 +13063,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &254302752
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13040,6 +13212,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &260208262
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13187,6 +13361,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &261643531
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13334,6 +13510,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &264292224
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13436,6 +13614,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &265378789
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13628,6 +13808,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &268227352
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13730,6 +13912,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &268703393
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13877,6 +14061,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &272241801
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14024,6 +14210,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &273372165
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14216,6 +14404,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &278150629
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14318,6 +14508,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &281672432
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14510,6 +14702,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &283365103
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14684,6 +14878,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &288150363
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14876,6 +15072,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &289798920
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15023,6 +15221,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &289975193
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15170,6 +15370,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &292384365
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15317,6 +15519,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &294882397
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15464,6 +15668,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &296147579
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15611,6 +15817,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &297037533
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15713,6 +15921,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &303696109
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15994,6 +16204,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &311011312
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16141,6 +16353,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &311858725
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16333,6 +16547,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &319093234
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16480,6 +16696,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &324546565
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16582,6 +16800,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &325852220
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16774,6 +16994,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &326554920
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16921,6 +17143,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &329967754
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17068,6 +17292,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &331143555
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17170,6 +17396,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &331742179
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17317,6 +17545,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &332536505
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17464,6 +17694,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &340188912
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17656,6 +17888,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &341816630
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17803,6 +18037,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &345749339
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17950,6 +18186,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &351906868
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18052,6 +18290,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &355949164
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18244,6 +18484,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &357923747
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18346,6 +18588,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &361035934
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18538,6 +18782,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &362194310
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18640,6 +18886,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &363283098
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18832,6 +19080,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &364574985
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18979,6 +19229,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &369584203
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19126,6 +19378,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &371356615
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19228,6 +19482,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &371479221
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19420,6 +19676,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &376381098
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19567,6 +19825,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &384068236
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19669,6 +19929,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &385514137
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19861,6 +20123,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &388667243
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19963,6 +20227,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &389908185
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20155,6 +20421,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &391113142
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20340,6 +20608,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &393436340
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20487,6 +20757,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &402098419
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20589,6 +20861,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &404200438
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20781,6 +21055,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &405272782
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20883,6 +21159,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &405651482
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21075,6 +21353,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &408446585
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21222,6 +21502,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &410918372
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21324,6 +21606,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &411858647
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21471,6 +21755,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &412340349
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21618,6 +21904,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &413325419
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21810,6 +22098,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &415129155
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21912,6 +22202,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &417139142
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22104,6 +22396,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &419984691
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22251,6 +22545,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &420422188
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22353,6 +22649,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &426115534
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22500,6 +22798,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &427209937
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22647,6 +22947,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &427315942
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22839,6 +23141,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &428380455
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22986,6 +23290,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &430911878
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23133,6 +23439,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &434493075
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23280,6 +23588,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &439738044
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23382,6 +23692,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &441652659
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23529,6 +23841,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &442437712
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23676,6 +23990,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &443133955
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23868,6 +24184,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &445642662
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24015,6 +24333,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &449448551
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24117,6 +24437,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &450195660
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24309,6 +24631,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &454154528
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24456,6 +24780,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &456564482
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24558,6 +24884,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &463890019
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24750,6 +25078,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &464766233
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24989,6 +25319,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &465528354
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25091,6 +25423,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &467408760
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25238,6 +25572,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &469645065
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25385,6 +25721,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &470444760
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25577,6 +25915,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &471321765
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25724,6 +26064,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &472583929
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25871,6 +26213,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &483639381
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25973,6 +26317,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &489579656
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26165,6 +26511,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &491212193
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26312,6 +26660,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &497288657
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26459,6 +26809,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &498656431
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26606,6 +26958,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &502455554
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26753,6 +27107,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &503718923
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26900,6 +27256,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &503825020
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27047,6 +27405,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &506125327
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27149,6 +27509,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &508208449
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27341,6 +27703,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &508642283
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27443,6 +27807,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &515063522
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27590,6 +27956,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &518790379
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27782,6 +28150,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &519156051
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27884,6 +28254,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &522711888
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28076,6 +28448,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &523947429
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28178,6 +28552,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &524399951
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28370,6 +28746,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &527339904
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28517,6 +28895,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &530254213
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28619,6 +28999,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &533869356
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28811,6 +29193,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &535964370
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28958,6 +29342,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &546268010
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29060,6 +29446,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &551532164
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29207,6 +29595,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &560358692
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29354,6 +29744,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &566107812
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29501,6 +29893,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &566435067
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29693,6 +30087,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &569547163
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29795,6 +30191,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &578087156
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29987,6 +30385,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &580155631
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30134,6 +30534,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &581490105
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30236,6 +30638,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &581518893
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30383,6 +30787,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &583408308
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30575,6 +30981,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &587159426
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30722,6 +31130,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &588988034
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30824,6 +31234,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &591219443
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31016,6 +31428,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &591972734
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -31118,6 +31532,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &595226574
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31310,6 +31726,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &600889246
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -31412,6 +31830,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &601125439
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31604,6 +32024,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &607169020
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -31751,6 +32173,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &611092581
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -31853,6 +32277,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &616517726
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32045,6 +32471,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &618602916
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32192,6 +32620,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &618684913
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32337,6 +32767,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &630027808
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32529,6 +32961,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &638293389
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32689,6 +33123,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &643932852
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32836,6 +33272,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &645113857
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32983,6 +33421,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &648155623
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33175,6 +33615,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &649251761
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -33322,6 +33764,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &650302170
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -33469,6 +33913,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &653478748
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -33571,6 +34017,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &663437066
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33718,6 +34166,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &663482597
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33865,6 +34315,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &663958431
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34012,6 +34464,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &664726717
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34141,6 +34595,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2680e26d636ed104eb2e8ad15cfd335d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  baseMoveSpeed: 5
   rayDistance: 0.9
   rayStartOffset: 0.3
 --- !u!61 &665695793
@@ -34332,6 +34787,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &668853892
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34524,6 +34981,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &674328523
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -34626,6 +35085,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &678318973
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34773,6 +35234,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &686143612
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34920,6 +35383,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &698942163
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35067,6 +35532,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &706444159
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35259,6 +35726,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &706544333
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -35361,6 +35830,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &712127951
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35553,6 +36024,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &712603044
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -35700,6 +36173,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &717038628
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -35802,6 +36277,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &719278961
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35949,6 +36426,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &722899752
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36141,6 +36620,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &723007019
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36243,6 +36724,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &725988748
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36435,6 +36918,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &726703376
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36582,6 +37067,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &727122184
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36729,6 +37216,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &729240911
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36876,6 +37365,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &729540160
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -37023,6 +37514,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &732969732
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -37125,6 +37618,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &735127907
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37272,6 +37767,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &737495263
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37464,6 +37961,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &742744290
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -37611,6 +38110,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &743085332
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -37758,6 +38259,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &746350535
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -37863,7 +38366,8 @@ MonoBehaviour:
   timeBar: {fileID: 747101202}
   totalTime: 60
   barMaxWidth: 300
-  player: {fileID: 0}
+  playerObject: {fileID: 0}
+  playerTargetY: -25
 --- !u!114 &747101204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37952,6 +38456,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &749059083
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38099,6 +38605,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &749566937
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38291,6 +38799,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &750895886
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38438,6 +38948,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &754178132
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38540,6 +39052,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &763861645
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38732,6 +39246,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &770361865
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38879,6 +39395,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &776390993
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39026,6 +39544,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &784849645
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39173,6 +39693,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &786309936
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39275,6 +39797,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &793859672
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -39467,6 +39991,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &796213190
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39614,6 +40140,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &803552419
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39761,6 +40289,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &813239539
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39863,6 +40393,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &816425656
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40010,6 +40542,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &817866670
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40157,6 +40691,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &819597496
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40304,6 +40840,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &820482743
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40496,6 +41034,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &823487489
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -40598,6 +41138,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &826280030
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40790,6 +41332,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &829803266
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -40937,6 +41481,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &830395170
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -41084,6 +41630,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &835714255
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -41231,6 +41779,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &839016774
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -41378,6 +41928,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &840393862
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -41525,6 +42077,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &841989350
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -41627,6 +42181,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &844033686
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -41774,6 +42330,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &844486536
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -41966,6 +42524,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &848050319
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -42113,6 +42673,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &849127228
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -42215,6 +42777,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &852441350
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -42362,6 +42926,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &856842845
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -42509,6 +43075,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &861481455
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -42701,6 +43269,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &866245223
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -42848,6 +43418,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &867402066
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -42950,6 +43522,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &874747462
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -43142,6 +43716,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &875291558
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -43289,6 +43865,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &880077498
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -43525,6 +44103,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &880841933
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -43717,6 +44297,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &883828662
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -43819,6 +44401,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &886492532
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -43966,6 +44550,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &890383273
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -44158,6 +44744,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &892016930
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -44305,6 +44893,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &893403634
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -44407,6 +44997,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &893602414
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -44599,6 +45191,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &894185559
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -44746,6 +45340,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &895234924
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -44848,6 +45444,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &902532645
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -44995,6 +45593,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &902590430
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -45187,6 +45787,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &905582645
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -45334,6 +45936,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &908651753
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -45436,6 +46040,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &910950363
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -45628,6 +46234,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &912620532
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -45730,6 +46338,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &915084715
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -45922,6 +46532,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &916429926
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -46069,6 +46681,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &920510104
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -46171,6 +46785,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &921629442
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -46318,6 +46934,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &925117027
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -46465,6 +47083,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &931346774
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -46657,6 +47277,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &933972344
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -46804,6 +47426,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &935643453
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -46906,6 +47530,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &939127382
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -47053,6 +47679,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &942055223
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -47200,6 +47828,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &946369250
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -47347,6 +47977,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &948123425
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -47539,6 +48171,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &950587151
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -47641,6 +48275,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &953131448
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -47833,6 +48469,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &953279575
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -47980,6 +48618,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &954261476
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -48127,6 +48767,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &960271848
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -48274,6 +48916,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &960363492
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -48376,6 +49020,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &963744004
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -48568,6 +49214,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &965640961
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -48670,6 +49318,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &969260371
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -48862,6 +49512,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &970892482
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -49009,6 +49661,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &975388651
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -49194,6 +49848,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &979857809
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -49296,6 +49952,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &981363578
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -49443,6 +50101,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &983130198
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -49590,6 +50250,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &985554940
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -49782,6 +50444,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &987134340
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -49929,6 +50593,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &996541725
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -50031,6 +50697,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1001232195
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -50223,6 +50891,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1002733072
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -50325,6 +50995,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1005212117
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -50517,6 +51189,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1011036404
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -50619,6 +51293,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1015937447
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -50811,6 +51487,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1017798053
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -50958,6 +51636,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1028251037
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -51060,6 +51740,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1034041137
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -51252,6 +51934,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1035815105
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -51354,6 +52038,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1037215152
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -51576,6 +52262,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1039081354
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -51768,6 +52456,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1041772456
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -51915,6 +52605,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1043359810
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -52062,6 +52754,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1047267125
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -52209,6 +52903,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1051866543
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -52311,6 +53007,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1055335170
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -52575,6 +53273,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1057740838
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -52722,6 +53422,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1062067475
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -52824,6 +53526,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1063757702
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -52971,6 +53675,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1067405068
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -53163,6 +53869,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1067686130
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -53310,6 +54018,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1074036691
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -53412,6 +54122,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1075033943
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -53604,6 +54316,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1075132897
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -53706,6 +54420,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1079954638
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -53898,6 +54614,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1080385998
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -54045,6 +54763,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1090737515
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -54147,6 +54867,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1097960300
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -54294,6 +55016,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1099846107
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -54441,6 +55165,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1100618117
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -54633,6 +55359,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1101531786
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -54780,6 +55508,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1105041627
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -54882,6 +55612,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1105922147
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -55074,6 +55806,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1106256148
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -55176,6 +55910,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1111312870
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -55368,6 +56104,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1112617301
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -55515,6 +56253,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1115109768
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -55617,6 +56357,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1115860673
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -55809,6 +56551,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1116220471
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -55895,6 +56639,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1117934442
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -56323,6 +57069,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1120450438
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -56470,6 +57218,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1121532626
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -56662,6 +57412,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1122550890
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -56809,6 +57561,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1123769466
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -56956,6 +57710,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1132004682
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -57103,6 +57859,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1132377440
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -57250,6 +58008,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1134846654
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -57352,6 +58112,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1138208216
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -57499,6 +58261,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1142075774
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -57691,6 +58455,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1142448016
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -57793,6 +58559,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1144346940
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -57940,6 +58708,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1147343724
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -58207,6 +58977,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1155463134
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -58354,6 +59126,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1155707097
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -58456,6 +59230,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1155783770
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -58648,6 +59424,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1156953246
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -58750,6 +59528,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1157945201
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -58897,6 +59677,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1159849515
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -59089,6 +59871,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1162364397
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -59236,6 +60020,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1164784593
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -59338,6 +60124,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1164846552
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -59485,6 +60273,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1176532978
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -59677,6 +60467,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1176738381
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -59824,6 +60616,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1177341055
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -59926,6 +60720,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1183248950
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -60118,6 +60914,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1186772559
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -60265,6 +61063,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1187332691
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -60412,6 +61212,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1187954697
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -60559,6 +61361,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1188023370
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -60661,6 +61465,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1188238261
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -60853,6 +61659,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1189740366
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -60955,6 +61763,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1190483702
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -61147,6 +61957,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1194270157
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -61249,6 +62061,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1195877228
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -61396,6 +62210,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1197215337
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -61543,6 +62359,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1200266639
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -61735,6 +62553,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1203882255
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -61837,6 +62657,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1208214700
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -61984,6 +62806,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1218274737
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -62131,6 +62955,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1219659337
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -62278,6 +63104,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1227702981
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -62470,6 +63298,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1230507413
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -62689,6 +63519,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1236046570
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -62836,6 +63668,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1238507787
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -62938,6 +63772,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1249178613
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -63085,6 +63921,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1249823316
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -63232,6 +64070,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1250381779
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -63379,6 +64219,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1258110988
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -63526,6 +64368,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1262335689
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -63718,6 +64562,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1265397520
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -63820,6 +64666,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1267640417
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -63967,6 +64815,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1270237101
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -64114,6 +64964,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1275118300
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -64306,6 +65158,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1280251589
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -64408,6 +65262,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1282236054
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -64600,6 +65456,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1282794719
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -64747,6 +65605,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1287886447
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -64849,6 +65709,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1288479534
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -64996,6 +65858,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1297325608
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -65188,6 +66052,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1297590243
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -65335,6 +66201,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1298827902
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -65482,6 +66350,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1299178716
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -65629,6 +66499,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1304981916
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -65719,6 +66591,8 @@ MonoBehaviour:
   criticalChance: 0
   miningFortune: 0
   absorptionCount: 0
+  dimensionalPickaxeCount: 0
+  powerCrystalNumber: 0
 --- !u!4 &1305860692
 Transform:
   m_ObjectHideFlags: 0
@@ -65784,6 +66658,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1310082196
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -65976,6 +66852,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1321943946
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -66123,6 +67001,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1324332671
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -66225,6 +67105,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1329692251
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -66372,6 +67254,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1330047809
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -66564,6 +67448,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1331332494
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -66703,6 +67589,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1333152770
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -66963,6 +67851,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1336358894
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -67110,6 +68000,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1336524956
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -67302,6 +68194,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1339931433
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -67404,6 +68298,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1344273190
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -67551,6 +68447,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1344729765
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -67743,6 +68641,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1347119302
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -67845,6 +68745,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1348270213
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -67992,6 +68894,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1348564168
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -68184,6 +69088,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1349662189
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -68331,6 +69237,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1350224038
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -68567,6 +69475,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1352670789
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -68714,6 +69624,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1352844001
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -68861,6 +69773,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1354231943
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -69053,6 +69967,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1354993002
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -69200,6 +70116,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1359193150
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -69302,6 +70220,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1359460761
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -69449,6 +70369,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1365204678
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -69641,6 +70563,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1372862725
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -69743,6 +70667,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1373979330
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -69935,6 +70861,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1375999480
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -70082,6 +71010,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1376859169
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -70229,6 +71159,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1378106665
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -70331,6 +71263,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1379034493
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -70478,6 +71412,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1379185310
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -70670,6 +71606,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1379561738
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -70772,6 +71710,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1382749404
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -70964,6 +71904,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1390421233
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -71066,6 +72008,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1392963465
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -71213,6 +72157,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1395303035
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -71360,6 +72306,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1395901723
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -71507,6 +72455,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1397372628
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -71699,6 +72649,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1399182724
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -71846,6 +72798,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1400505875
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -71948,6 +72902,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1411557546
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -72140,6 +73096,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1411990301
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -72376,6 +73334,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1426749596
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -72568,6 +73528,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1440184426
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -72670,6 +73632,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1440379509
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -72817,6 +73781,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1443556494
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -73009,6 +73975,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1443881761
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -73156,6 +74124,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1445902238
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -73303,6 +74273,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1448183525
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -73450,6 +74422,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1449393977
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -73627,6 +74601,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1454699931
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -73774,6 +74750,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1456528656
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -73966,6 +74944,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1459039636
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -74113,6 +75093,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1468099435
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -74260,6 +75242,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1472204208
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -74362,6 +75346,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1476525470
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -74554,6 +75540,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1479104912
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -74701,6 +75689,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1481719228
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -74848,6 +75838,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1483501163
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -74950,6 +75942,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1483652353
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -75142,6 +76136,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1486036592
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -75244,6 +76240,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1486588692
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -75391,6 +76389,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1488504759
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -75632,6 +76632,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1492027333
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -75779,6 +76781,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1493693946
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -75926,6 +76930,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1493849919
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -76073,6 +77079,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1494985432
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -76220,6 +77228,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1495276883
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -76322,6 +77332,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1500229670
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -76514,6 +77526,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1505194163
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -76616,6 +77630,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1519509640
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -76808,6 +77824,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1523213732
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -76955,6 +77973,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1524682415
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -77057,6 +78077,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1530115874
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -77204,6 +78226,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1531971095
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -77351,6 +78375,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1536234039
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -77498,6 +78524,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1537681791
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -77690,6 +78718,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1540629686
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -77926,6 +78956,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1546530505
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -78118,6 +79150,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1548609840
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -78399,6 +79433,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1552628497
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -78501,6 +79537,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1557504840
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -78693,6 +79731,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1559139918
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -78840,6 +79880,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1563810976
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -78987,6 +80029,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1566512079
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -79134,6 +80178,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1568656470
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -79281,6 +80327,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1570040259
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -79383,6 +80431,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1571926677
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -79530,6 +80580,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1573767010
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -79677,6 +80729,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1576876460
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -79824,6 +80878,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1578655951
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -80016,6 +81072,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1579975222
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -80163,6 +81221,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1580174564
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -80310,6 +81370,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1583437328
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -80457,6 +81519,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1590254354
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -80559,6 +81623,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1593539454
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -80751,6 +81817,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1596440403
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -80853,6 +81921,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1601323661
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -81045,6 +82115,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1603181608
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -81147,6 +82219,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1608934271
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -81294,6 +82368,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1609690691
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -81486,6 +82562,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1612217887
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -81633,6 +82711,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1614194319
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -81780,6 +82860,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1614653044
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -81882,6 +82964,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1615071341
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -82074,6 +83158,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1616612532
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -82176,6 +83262,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1618664215
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -82368,6 +83456,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1621113698
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -82470,6 +83560,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1633055410
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -82617,6 +83709,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1639052627
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -82809,6 +83903,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1639062920
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -83090,6 +84186,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1642424755
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -83237,6 +84335,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1644439015
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -83431,6 +84531,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1647078998
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -83623,6 +84725,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1647484127
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -83770,6 +84874,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1649526169
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -83872,6 +84978,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1652206969
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -84019,6 +85127,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1656793683
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -84211,6 +85321,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1662696783
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -84358,6 +85470,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1665552617
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -84460,6 +85574,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1668311301
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -84652,6 +85768,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1673333577
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -84754,6 +85872,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1674561293
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -84946,6 +86066,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1680536027
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -85093,6 +86215,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1685821093
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -85195,6 +86319,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1686417142
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -85387,6 +86513,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1688300934
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -85534,6 +86662,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1693335377
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -85636,6 +86766,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1698594515
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -85828,6 +86960,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1700850151
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -85975,6 +87109,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1709574140
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -86122,6 +87258,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1709634092
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -86269,6 +87407,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1710566183
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -86371,6 +87511,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1710990812
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -86518,6 +87660,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1714887375
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -86710,6 +87854,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1717757775
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -86857,6 +88003,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1729745829
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -87093,6 +88241,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1738282557
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -87240,6 +88390,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1747446421
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -87432,6 +88584,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1747726720
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -87534,6 +88688,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1755027295
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -87681,6 +88837,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1758570166
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -87873,6 +89031,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1764676395
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -87975,6 +89135,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1767759507
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -88122,6 +89284,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1768680278
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -88314,6 +89478,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1775440428
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -88416,6 +89582,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1777880843
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -88563,6 +89731,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1788249152
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -88710,6 +89880,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1789533876
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -88857,6 +90029,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1789539812
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -89004,6 +90178,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1793239660
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -89151,6 +90327,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1794342085
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -89298,6 +90476,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1795589183
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -89490,6 +90670,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1800881719
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -89637,6 +90819,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1802994860
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -89784,6 +90968,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1807146457
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -89886,6 +91072,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1809779030
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -90182,6 +91370,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1810340155
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -90284,6 +91474,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1826770857
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -90476,6 +91668,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1829550504
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -90623,6 +91817,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1829644946
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -90770,6 +91966,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1841962900
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -90872,6 +92070,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1846432807
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -91064,6 +92264,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1857283937
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -91166,6 +92368,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1872536966
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -91313,6 +92517,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1872991594
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -91460,6 +92666,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1873816794
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -91652,6 +92860,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1876194601
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -91754,6 +92964,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1877281882
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -91946,6 +93158,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1878836084
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -92178,6 +93392,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1883783973
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -92280,6 +93496,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1889208892
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -92427,6 +93645,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1889565898
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -92574,6 +93794,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1892566492
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -92766,6 +93988,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1893404884
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -92913,6 +94137,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1893889449
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -93060,6 +94286,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1895076104
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -93162,6 +94390,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1903636124
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -93354,6 +94584,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1905668802
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -93456,6 +94688,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1908869723
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -93603,6 +94837,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1910471779
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -93795,6 +95031,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1912017965
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -93897,6 +95135,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1917456306
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -94044,6 +95284,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1919175112
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -94191,6 +95433,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1919857731
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -94383,6 +95627,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1920366078
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -94530,6 +95776,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1920366204
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -94677,6 +95925,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1920472408
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -94824,6 +96074,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1922375101
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -94971,6 +96223,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1922492485
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -95118,6 +96372,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1923318112
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -95220,6 +96476,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1924203272
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -95367,6 +96625,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1932863917
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -95559,6 +96819,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1934196128
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -95661,6 +96923,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1943114652
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -95808,6 +97072,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1947133121
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -95955,6 +97221,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1949906462
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -96147,6 +97415,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1952944111
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -96249,6 +97519,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1953423091
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -96441,6 +97713,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1964920288
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -96588,6 +97862,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1966419086
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -96735,6 +98011,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1968349300
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -96837,6 +98115,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1969289757
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -97029,6 +98309,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1975101700
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -97131,6 +98413,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1975852747
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -97323,6 +98607,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1976019528
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -97425,6 +98711,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1977626690
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -97617,6 +98905,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1978455498
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -97764,6 +99054,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1978671680
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -97866,6 +99158,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1982853098
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -98058,6 +99352,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1984063890
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -98205,6 +99501,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1991980799
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -98352,6 +99650,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &1992240238
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -98454,6 +99754,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1993965618
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -98601,6 +99903,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1996971639
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -98748,6 +100052,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &1999516260
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -98895,6 +100201,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &2000614629
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -99042,6 +100350,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &2003002297
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -99234,6 +100544,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &2006944161
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -99336,6 +100648,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &2011465537
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -99528,6 +100842,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &2011733761
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -99630,6 +100946,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &2013734011
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -99822,6 +101140,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &2018049615
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -99969,6 +101289,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &2020592638
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -100071,6 +101393,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &2021077807
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -100263,6 +101587,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &2029698698
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -100365,6 +101691,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &2035880250
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -100512,6 +101840,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &2040740023
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -100659,6 +101989,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &2051528124
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -100806,6 +102138,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &2053109624
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -100953,6 +102287,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &2053461603
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -101145,6 +102481,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &2054615515
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -101292,6 +102630,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &2057135580
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -101439,6 +102779,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &2057368304
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -101541,6 +102883,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &2057849037
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -101733,6 +103077,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &2072502498
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -101835,6 +103181,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &2072577063
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -101982,6 +103330,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &2078213120
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -102129,6 +103479,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &2085663797
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -102276,6 +103628,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &2099304218
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -102468,6 +103822,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &2101895778
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -102615,6 +103971,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &2102472846
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -102717,6 +104075,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &2105611535
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -102864,6 +104224,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &2108746316
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -103056,6 +104418,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &2119428050
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -103158,6 +104522,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &2122949860
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -103350,6 +104716,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &2123885582
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -103497,6 +104865,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &2128381533
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -103644,6 +105014,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &2130125270
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -103746,6 +105118,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!61 &2134943148
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -103938,6 +105312,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &2141044953
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -104085,6 +105461,8 @@ MonoBehaviour:
   oreUIImage: {fileID: 0}
   oreSprites: []
   baseDigTime: 1
+  canClickToMine: 1
+  isMinedByMouse: 0
 --- !u!212 &2143444261
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -48,46 +48,46 @@ public class SimpleOre : MonoBehaviour
         UpdateDigTimeFromPlayerSpeed();
         AutoSetupOreImage();
 
-        // 创建进度条
-        CreateProgressBar();
+        //// 创建进度条
+        //CreateProgressBar();
     }
 
-    void CreateProgressBar()
-    {
-        if (progressBarObject != null && progressBarInstance == null)
-        {
-            // 创建进度条作为矿石的子物体
-            progressBarInstance = Instantiate(progressBarObject, transform);
-            progressBarInstance.transform.localPosition = new Vector3(
-                progressBarOffset.x,
-                progressBarOffset.y,
-                -0.1f // Z轴稍微靠前，确保在矿石上方
-            );
-            progressBarInstance.transform.localRotation = Quaternion.identity;
+    //void CreateProgressBar()
+    //{
+    //    if (progressBarObject != null && progressBarInstance == null)
+    //    {
+    //        // 创建进度条作为矿石的子物体
+    //        progressBarInstance = Instantiate(progressBarObject, transform);
+    //        progressBarInstance.transform.localPosition = new Vector3(
+    //            progressBarOffset.x,
+    //            progressBarOffset.y,
+    //            -0.1f // Z轴稍微靠前，确保在矿石上方
+    //        );
+    //        progressBarInstance.transform.localRotation = Quaternion.identity;
 
-            // 获取组件
-            progressBarSR = progressBarInstance.GetComponent<SpriteRenderer>();
-            progressBarTransform = progressBarInstance.transform;
+    //        // 获取组件
+    //        progressBarSR = progressBarInstance.GetComponent<SpriteRenderer>();
+    //        progressBarTransform = progressBarInstance.transform;
 
-            if (progressBarSR != null)
-            {
-                // 设置亮蓝色
-                progressBarSR.color = new Color(0f, 0.7f, 1f, 0.85f);
-                originalBarScale = progressBarTransform.localScale;
-            }
-            else
-            {
-                Debug.LogError("进度条物体没有SpriteRenderer组件！");
-            }
+    //        if (progressBarSR != null)
+    //        {
+    //            // 设置亮蓝色
+    //            progressBarSR.color = new Color(0f, 0.7f, 1f, 0.85f);
+    //            originalBarScale = progressBarTransform.localScale;
+    //        }
+    //        else
+    //        {
+    //            Debug.LogError("进度条物体没有SpriteRenderer组件！");
+    //        }
 
-            // 初始隐藏
-            HideProgressBar();
-        }
-        else if (progressBarObject == null)
-        {
-            Debug.LogWarning("进度条物体未设置！");
-        }
-    }
+    //        // 初始隐藏
+    //        HideProgressBar();
+    //    }
+    //    else if (progressBarObject == null)
+    //    {
+    //        Debug.LogWarning("进度条物体未设置！");
+    //    }
+    //}
 
     void SetBaseDigTime()
     {
