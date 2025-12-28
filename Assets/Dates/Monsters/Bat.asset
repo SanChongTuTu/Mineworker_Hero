@@ -18,4 +18,5 @@ MonoBehaviour:
   monsterLevel: 1
   MonsterHP: 6
   MonsterATK: 6
+  obj: {fileID: 6351564082040034259, guid: 937fe64481087a1488635f6e22f11395, type: 3}
   MonsterInfo: "\u8759\u8760"

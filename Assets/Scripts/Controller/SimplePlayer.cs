@@ -7,18 +7,12 @@ public class SimplePlayer : MonoBehaviour
 
     [Header("移动设置")]
     public float baseMoveSpeed = 5f; // 基础移动速度
-    public float acceleration = 30f; // 加速度
-    public float deceleration = 40f; // 减速度
-    public float maxSpeed = 8f;      // 最大速度
+
 
     [Header("检测设置")]
     public float rayDistance = 1.5f;
     public float rayStartOffset = 0.3f;
 
-    [Header("玩家属性")]
-    public int maxHealth = 4;
-    public int currentHealth = 4;
-    public int attackPower = 1;
 
     [Header("UI引用")]
     public ResultPanelUI resultPanel; // 直接引用场景中的面板
@@ -30,29 +24,14 @@ public class SimplePlayer : MonoBehaviour
     private SpriteRenderer sr;
     private bool isDead = false;
 
-    // 移动相关变量
-    private float targetHorizontalVelocity = 0f;
-    private float currentHorizontalVelocity = 0f;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        if (rb == null)
-        {
-            rb = gameObject.AddComponent<Rigidbody2D>();
-            // 恢复正常的物理属性
-            rb.gravityScale = 1f; // 正常重力
-            rb.mass = 1f; // 正常质量
-        }
+        sr=transform.GetChild(0).GetComponent<SpriteRenderer>();
 
         // 设置Rigidbody2D属性，减少滑动但保持正常物理
-        if (rb != null)
-        {
-            rb.interpolation = RigidbodyInterpolation2D.Interpolate; // 插值使移动更平滑
-            rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous; // 连续碰撞检测
-            rb.freezeRotation = true; // 冻结旋转
-            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
-        }
+
 
         // 初始化移动速度
         UpdateMoveSpeedFromController();
@@ -63,10 +42,6 @@ public class SimplePlayer : MonoBehaviour
             animationController = gameObject.AddComponent<PlayerAnimationController>();
         }
 
-        sr = transform.GetChild(0).GetComponent<SpriteRenderer>();
-
-        // 初始化生命值
-        currentHealth = maxHealth;
     }
 
     void Update()
@@ -75,6 +50,8 @@ public class SimplePlayer : MonoBehaviour
 
         // 实时更新移动速度（确保movespeed变化时立即生效）
         UpdateMoveSpeedFromController();
+
+        HandleMovement();
 
         // 转向
         HandleDirectionInput();
@@ -111,51 +88,20 @@ public class SimplePlayer : MonoBehaviour
         CheckHealth();
     }
 
-    void FixedUpdate()
-    {
-        if (isDead) return;
-
-        // 在FixedUpdate中处理物理移动，更稳定
-        HandleMovement();
-    }
 
     void HandleMovement()
     {
-        // 获取输入
-        float horizontalInput = Input.GetAxis("Horizontal");
-
-        // 计算目标速度
-        if (Mathf.Abs(horizontalInput) > 0.1f)
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
         {
-            // 有输入时，加速到目标速度
-            targetHorizontalVelocity = horizontalInput * currentMoveSpeed;
+            float h = Input.GetAxis("Horizontal");
 
-            // 使用加速度平滑加速
-            currentHorizontalVelocity = Mathf.MoveTowards(
-                currentHorizontalVelocity,
-                targetHorizontalVelocity,
-                acceleration * Time.fixedDeltaTime
-            );
+            // 使用当前实际移动速度
+            rb.velocity = new Vector2(h * currentMoveSpeed, rb.velocity.y);
         }
         else
         {
-            // 没有输入时，快速减速
-            targetHorizontalVelocity = 0f;
-            currentHorizontalVelocity = Mathf.MoveTowards(
-                currentHorizontalVelocity,
-                0f,
-                deceleration * Time.fixedDeltaTime
-            );
+            rb.velocity = new Vector2(0, rb.velocity.y);
         }
-
-        // 限制最大水平速度
-        currentHorizontalVelocity = Mathf.Clamp(currentHorizontalVelocity, -maxSpeed, maxSpeed);
-
-        // 获取当前垂直速度（重力下落）
-        float currentVerticalVelocity = rb.velocity.y;
-
-        // 只修改水平速度，保持垂直速度（让重力正常作用）
-        rb.velocity = new Vector2(currentHorizontalVelocity, currentVerticalVelocity);
     }
 
     void UpdateMoveSpeedFromController()
@@ -260,8 +206,8 @@ public class SimplePlayer : MonoBehaviour
     {
         if (isDead) return;
 
-        currentHealth -= damage;
-        Debug.Log($"玩家受到{damage}点伤害，剩余生命值: {currentHealth}");
+        GameDateController.Instance.blood -= damage;
+        Debug.Log($"玩家受到{damage}点伤害，剩余生命值: {GameDateController.Instance.blood}");
 
         CheckHealth();
     }
@@ -269,11 +215,15 @@ public class SimplePlayer : MonoBehaviour
     // 检查生命值
     void CheckHealth()
     {
-        if (currentHealth <= 0 && !isDead)
+        if (FindObjectOfType<GameDateController>() != null)
         {
-            currentHealth = 0;
-            Die();
+            if (GameDateController.Instance.blood <= 0 && !isDead)
+            {
+                GameDateController.Instance.blood = 0;
+                Die();
+            }
         }
+        
     }
 
     // 玩家死亡
@@ -286,8 +236,6 @@ public class SimplePlayer : MonoBehaviour
 
         // 停止所有动作
         rb.velocity = Vector2.zero;
-        currentHorizontalVelocity = 0f;
-        targetHorizontalVelocity = 0f;
 
         // 停止动画
         if (animationController != null)
@@ -306,6 +254,7 @@ public class SimplePlayer : MonoBehaviour
         if (resultPanel != null)
         {
             // 不再传递矿石数量，脚本内部固定为10
+            resultPanel.gameObject.SetActive(true);
             resultPanel.ShowDefeat();
         }
         else
@@ -327,16 +276,14 @@ public class SimplePlayer : MonoBehaviour
     }
 
     // 获取当前生命值
-    public int GetCurrentHealth()
+    public float GetCurrentHealth()
     {
-        return currentHealth;
+        return GameDateController.Instance.blood;
     }
 
     // 立即停止移动（外部调用）
     public void StopImmediately()
     {
         rb.velocity = new Vector2(0, rb.velocity.y); // 只停止水平移动
-        currentHorizontalVelocity = 0f;
-        targetHorizontalVelocity = 0f;
     }
 }

@@ -1,3 +1,4 @@
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -53,7 +54,9 @@ public class DepthProgressBar : MonoBehaviour
 
             if (depthBar != null)
             {
-                Vector2 size = new Vector2(depthBar.sizeDelta.x, (1 - progress) * barMaxHeight);
+                float bary = (1 - progress) * barMaxHeight;
+                bary=Mathf.Clamp(bary, 0, barMaxHeight);
+                Vector2 size = new Vector2(depthBar.sizeDelta.x, bary);
                 depthBar.sizeDelta = size;
             }
         }

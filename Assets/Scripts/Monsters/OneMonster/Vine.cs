@@ -2,15 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BigSkeleton : Monster
+public class Vine : Monster
 {
 
     // Start is called before the first frame update
     void Start()
     {
         MonsterName=monster.MonsterName;
-        MonsterHP=monster.MonsterHP;
-        MonsterATK = monster.MonsterATK;
+        maxblood = Random.Range(monster.MonsterMinHP, monster.MonsterMaxHP + 1);
+        maxattack = Random.Range(monster.MonsterMinATK, monster.MonsterMaxATK + 1);
+        MonsterHP = maxblood;
+        MonsterATK = maxattack;
 
     }
 
