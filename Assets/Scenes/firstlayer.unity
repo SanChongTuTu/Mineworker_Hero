@@ -72554,7 +72554,7 @@ MonoBehaviour:
   acceleration: 30
   deceleration: 40
   maxSpeed: 8
-  rayDistance: 0.9
+  rayDistance: 0.4
   rayStartOffset: 0.3
   maxHealth: 4
   currentHealth: 0
