@@ -8,41 +8,48 @@ public class SimplePlayer : MonoBehaviour
     [Header("移动设置")]
     public float baseMoveSpeed = 5f; // 基础移动速度
 
+
     [Header("检测设置")]
     public float rayDistance = 1.5f;
     public float rayStartOffset = 0.3f;
+
+
+    [Header("UI引用")]
+    public ResultPanelUI resultPanel; // 直接引用场景中的面板
+
 
     private Rigidbody2D rb;
     private float currentMoveSpeed; // 当前实际移动速度
     private PlayerAnimationController animationController;
     private SpriteRenderer sr;
+    private bool isDead = false;
+
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        if (rb == null)
-        {
-            rb = gameObject.AddComponent<Rigidbody2D>();
-            rb.gravityScale = 0; // 设置为无重力
-        }
+
+
+        // 设置Rigidbody2D属性，减少滑动但保持正常物理
+
 
         // 初始化移动速度
         UpdateMoveSpeedFromController();
+
         animationController = GetComponent<PlayerAnimationController>();
         if (animationController == null)
         {
             animationController = gameObject.AddComponent<PlayerAnimationController>();
         }
-        sr=transform.GetChild(0).GetComponent<SpriteRenderer>();
+
     }
 
     void Update()
     {
+        if (isDead) return; // 死亡后不再响应输入
+
         // 实时更新移动速度（确保movespeed变化时立即生效）
         UpdateMoveSpeedFromController();
-
-        // 移动
-        HandleMovement();
 
         // 转向
         HandleDirectionInput();
@@ -56,8 +63,6 @@ public class SimplePlayer : MonoBehaviour
         // 可视化射线
         Vector2 rayStart = (Vector2)transform.position + currentDirection * rayStartOffset;
         Debug.DrawRay(rayStart, currentDirection * (rayDistance - rayStartOffset), GetDirectionColor());
-        float horizontalInput = Input.GetAxis("Horizontal");
-        bool isMoving = Mathf.Abs(horizontalInput) > 0.1f;
 
         // 检测挖矿状态变化
         bool isMining = Input.GetKey(KeyCode.J);
@@ -69,22 +74,22 @@ public class SimplePlayer : MonoBehaviour
             {
                 animationController.StartMiningAnimation();
             }
-            else if (isMoving && animationController.GetCurrentState() != "Moving")
-            {
-                animationController.StartMovingAnimation();
-            }
         }
 
         float h = Input.GetAxis("Horizontal");
         if (h != 0)
         {
-            sr.flipX = h > 0;   
+            sr.flipX = h > 0;
         }
+
+        // 检查生命值
+        CheckHealth();
     }
+
 
     void HandleMovement()
     {
-        if(Input.GetKey(KeyCode.A)||Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
         {
             float h = Input.GetAxis("Horizontal");
 
@@ -103,8 +108,6 @@ public class SimplePlayer : MonoBehaviour
         {
             // movespeed = 1.0 表示基础速度，movespeed = 1.5 表示速度提升50%
             currentMoveSpeed = baseMoveSpeed * GameDateController.Instance.movespeed;
-
-            
         }
         else
         {
@@ -139,10 +142,6 @@ public class SimplePlayer : MonoBehaviour
         if (hit.collider != null && hit.collider.CompareTag("Ore"))
         {
             newTarget = hit.collider.GetComponent<SimpleOre>();
-            if (newTarget != null)
-            {
-                //Debug.Log($"找到矿石: 类型={newTarget.oreType}");
-            }
         }
 
         if (newTarget != targetOre)
@@ -155,7 +154,7 @@ public class SimplePlayer : MonoBehaviour
                     animationController.StopMiningAnimation();
                 }
             }
-            
+
             targetOre = newTarget;
         }
     }
@@ -200,9 +199,88 @@ public class SimplePlayer : MonoBehaviour
         return Color.white;
     }
 
-    // 公开方法：获取当前移动速度（用于UI显示等）
+    // 受到伤害
+    public void TakeDamage(int damage)
+    {
+        if (isDead) return;
+
+        currentHealth -= damage;
+        Debug.Log($"玩家受到{damage}点伤害，剩余生命值: {currentHealth}");
+
+        CheckHealth();
+    }
+
+    // 检查生命值
+    void CheckHealth()
+    {
+        if (currentHealth <= 0 && !isDead)
+        {
+            currentHealth = 0;
+            Die();
+        }
+    }
+
+    // 玩家死亡
+    void Die()
+    {
+        if (isDead) return;
+
+        isDead = true;
+        Debug.Log("玩家死亡");
+
+        // 停止所有动作
+        rb.velocity = Vector2.zero;
+        currentHorizontalVelocity = 0f;
+        targetHorizontalVelocity = 0f;
+
+        // 停止动画
+        if (animationController != null)
+        {
+            animationController.StopMiningAnimation();
+            animationController.StopMovingAnimation();
+        }
+
+        // 显示失败面板（只显示返回按钮）
+        ShowDefeat();
+    }
+
+    // 显示失败面板
+    void ShowDefeat()
+    {
+        if (resultPanel != null)
+        {
+            // 不再传递矿石数量，脚本内部固定为10
+            resultPanel.ShowDefeat();
+        }
+        else
+        {
+            Debug.LogError("结果面板引用未设置！");
+        }
+    }
+
+    // 计算获得的超能矿石
+    int CalculateOreGained()
+    {
+        return Random.Range(0, 10);
+    }
+
+    // 获取当前移动速度
     public float GetCurrentMoveSpeed()
     {
         return currentMoveSpeed;
+    }
+
+    // 获取当前生命值
+    public int GetCurrentHealth()
+    {
+        return currentHealth;
+    }
+
+    // 立即停止移动（外部调用）
+    public void StopImmediately()
+    {
+        rb.velocity = new Vector2(0, rb.velocity.y); // 只停止水平移动
+        currentHorizontalVelocity = 0f;
+        targetHorizontalVelocity = 0f;
     }
 }

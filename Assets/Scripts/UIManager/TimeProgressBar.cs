@@ -92,4 +92,18 @@ public class TimeProgressBar : MonoBehaviour
         UpdateProgressBar();
     }
 
+    
+    public void ForceTimeZero()
+    {
+        currentTime = 0f;
+        isTimerRunning = false;
+        UpdateProgressBar();
+
+        if (!hasTriggered)
+        {
+            OnTimeUp();
+        }
+
+        Debug.Log("时间进度条强制归零");
+    }
 }

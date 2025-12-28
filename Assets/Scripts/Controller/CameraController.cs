@@ -16,8 +16,13 @@ public class CameraController : MonoBehaviour
     public float maxX = 0f;
 
     [Header("目标位置设置")]
-    public float targetYPosition = -40f;
+    public float targetYPosition = -37f;
     public float moveToTargetDuration = 2f;
+
+    [Header("摄像机拉近")]
+    public float zoomInSize = 3f; // 拉近后的视野大小（更小的数值）
+    public float zoomDuration = 1f; // 拉近持续时间
+
     public float GetTargetYPosition()
     {
         return targetYPosition;
@@ -29,6 +34,7 @@ public class CameraController : MonoBehaviour
     private bool isMovingToTarget = false;
     private Vector3 startPosition;
     private bool isMoving = false;
+    private float moveStartTime;
 
     void Awake()
     {
@@ -74,22 +80,34 @@ public class CameraController : MonoBehaviour
             isMovingToTarget = true;
             isMoving = true;
             startPosition = transform.position;
-            
+            moveStartTime = Time.time;
         }
     }
 
     void MoveToTargetUpdate()
     {
-        float progress = Mathf.Clamp01(Time.deltaTime / moveToTargetDuration);
-        Vector3 targetPosition = new Vector3(fixedXPosition, targetYPosition, offset.z);
-        transform.position = Vector3.Lerp(transform.position, targetPosition, progress);
+        float elapsedTime = Time.time - moveStartTime;
+        float moveProgress = Mathf.Clamp01(elapsedTime / moveToTargetDuration);
 
-        if (Mathf.Abs(transform.position.y - targetYPosition) < 0.1f)
+        // 移动相机到目标位置
+        Vector3 targetPosition = new Vector3(fixedXPosition, targetYPosition, offset.z);
+        transform.position = Vector3.Lerp(startPosition, targetPosition, moveProgress);
+
+        // 同时拉近摄像机（视野变小）
+        if (zoomDuration > 0)
+        {
+            float zoomProgress = Mathf.Clamp01(elapsedTime / zoomDuration);
+            // 从originalSize缩小到zoomInSize
+            cam.orthographicSize = Mathf.Lerp(originalSize, zoomInSize, zoomProgress);
+        }
+
+        if (moveProgress >= 1f)
         {
             isMovingToTarget = false;
             transform.position = targetPosition;
-            Debug.Log("相机已到达Y=-25");
+            cam.orthographicSize = zoomInSize; // 确保最终拉近
         }
+
         PlayerBattleController.Instance.enabled = true;
         battles.SetActive(true);
     }
