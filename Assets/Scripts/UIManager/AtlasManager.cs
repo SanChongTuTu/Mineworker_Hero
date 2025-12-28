@@ -29,8 +29,8 @@ public class AtlasManager : MonoBehaviour
                 btn.transform.GetChild(1).gameObject.SetActive(false);
                 Monster info = btn.GetComponent<Monster>();
                 monstername.text = info.monster.MonsterName;
-                monsterblood.text = "生命值: " + info.monster.MonsterHP.ToString();
-                monsterattack.text = "攻击力: " + info.monster.MonsterATK.ToString();
+                monsterblood.text = $"生命值: {info.monster.MonsterMinHP}~{info.monster.MonsterMaxHP}";
+                monsterattack.text = $"攻击力:{info.monster.MonsterMinATK}~{info.monster.MonsterMaxATK}";
                 killmonsternum.text = "击杀数量: ";
                 monsterinfo.text = info.monster.MonsterInfo;
                 monstericon.sprite = info.monster.MonsterIcon;

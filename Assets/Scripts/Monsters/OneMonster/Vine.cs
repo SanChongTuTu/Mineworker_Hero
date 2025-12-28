@@ -9,8 +9,10 @@ public class Vine : Monster
     void Start()
     {
         MonsterName=monster.MonsterName;
-        MonsterHP=monster.MonsterHP;
-        MonsterATK = monster.MonsterATK;
+        maxblood = Random.Range(monster.MonsterMinHP, monster.MonsterMaxHP + 1);
+        maxattack = Random.Range(monster.MonsterMinATK, monster.MonsterMaxATK + 1);
+        MonsterHP = maxblood;
+        MonsterATK = maxattack;
 
     }
 

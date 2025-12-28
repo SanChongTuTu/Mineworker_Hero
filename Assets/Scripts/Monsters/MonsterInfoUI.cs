@@ -2,11 +2,24 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
 using TMPro;
+using System;
+using System.Collections;
+using System.Threading;
 
 public class MonsterInfoUI : MonoBehaviour
 {
+    [Header("怪物初始资源")]
+    public Monster monster;
+
     [Header("UI组件")]
     public Image monsterIcon;
+    [Header("头像UI")]
+    public Image icon;
+    [Header("血条UI")]
+    public Image healthbarquick; // 血条填充图片
+    public Image healthbarslow;  // 血条慢速填充图片
+    [Header("UI提示框")]
+    public GameObject resultPanelPrefab; // 结果面板预制体
 
     public TextMeshProUGUI monsterNameText;
     public TextMeshProUGUI healthText;
@@ -22,17 +35,68 @@ public class MonsterInfoUI : MonoBehaviour
     public CreateMonster[] floor2Monsters; // 第2层可能出现的怪物
     public CreateMonster[] floor3Monsters; // 第3层可能出现的怪物
 
+    private static MonsterInfoUI instance;
+    public static MonsterInfoUI Instance
+    {
+        get
+        {
+            if (instance == null)
+            {
+                instance = FindObjectOfType<MonsterInfoUI>();
+                if (instance == null)
+                {
+                    Debug.Log("MonsterInfoUI实例未找到！");
+                }
+            }
+            return instance;
+        }
+    }
+
     void Start()
     {
         // 初始显示第1层随机怪物
-        ShowRandomMonsterForFloor(1);
+        ShowRandomMonsterForFloor(currentFloor);
+
+        healthbarquick.rectTransform.sizeDelta = new Vector2(300, 30);
+        healthbarslow.rectTransform.sizeDelta = new Vector2(300, 30);
+    }
+
+
+    public void Decreaseblood(float aimtime)
+    {
+        StartCoroutine(DecreaseBlood(aimtime));
+    }
+
+    IEnumerator DecreaseBlood(float aimtime)
+    {
+        // 更新血条UI
+        float healthRatio = (float)monster.MonsterHP / monster.maxblood;
+        healthbarquick.rectTransform.sizeDelta = new Vector2(300 * healthRatio, 30);
+
+        float time = 0;
+        float start = healthbarslow.rectTransform.sizeDelta.x;
+
+        while (time < aimtime)
+        {
+            float nowhealthbarslow = Mathf.Lerp(start, healthRatio * 300, time / aimtime);
+            healthbarslow.rectTransform.sizeDelta = new Vector2(nowhealthbarslow, 30);
+            time += Time.deltaTime;
+            yield return null;
+        }
+
+        if (healthbarslow.rectTransform.sizeDelta.x < 300 * healthRatio)
+        {
+            healthbarslow.rectTransform.sizeDelta = new Vector2(healthRatio * 300, 30);
+        }
+
+        yield break;
     }
 
     // 显示指定层的随机怪物
     public void ShowRandomMonsterForFloor(int floor)
     {
         currentFloor = floor;
-
+ 
         // 根据层数获取对应的怪物列表
         CreateMonster[] availableMonsters = GetMonstersForFloor(floor);
 
@@ -44,8 +108,12 @@ public class MonsterInfoUI : MonoBehaviour
         }
 
         // 随机选择一个怪物
-        int randomIndex = Random.Range(0, availableMonsters.Length);
+        int randomIndex = UnityEngine.Random.Range(0, availableMonsters.Length);
         currentMonsterData = availableMonsters[randomIndex];
+
+        GameObject summonobj=Instantiate(currentMonsterData.obj, new Vector3(8, -41, 0), new Quaternion(0, 0, 0, 0));
+        monster=summonobj.GetComponent<Monster>();
+
 
         // 更新UI
         UpdateUI();
@@ -81,6 +149,8 @@ public class MonsterInfoUI : MonoBehaviour
             monsterIcon.enabled = currentMonsterData.MonsterIcon != null;
         }
 
+        icon.sprite=currentMonsterData.MonsterIcon;
+
         // 怪物名称
         if (monsterNameText != null)
         {
@@ -95,7 +165,7 @@ public class MonsterInfoUI : MonoBehaviour
             // 注意：策划案要求怪物属性在一定范围内随机
             // 但你的CreateMonster已经有固定值，这里可以：
             // 1. 直接使用固定值
-            healthText.text = $" {currentMonsterData.MonsterHP}";
+            healthText.text = $" {monster.maxblood}";
 
             // 2. 或者在范围内随机（如果需要随机的话）
             // int randomHP = GetRandomMonsterHP(currentFloor);
@@ -105,7 +175,7 @@ public class MonsterInfoUI : MonoBehaviour
         // 攻击力
         if (attackText != null)
         {
-            attackText.text = $" {currentMonsterData.MonsterATK}";
+            attackText.text = $" {monster.maxattack}";
         }
 
         // 怪物介绍/特殊特征
@@ -149,17 +219,33 @@ public class MonsterInfoUI : MonoBehaviour
         return currentMonsterData;
     }
 
-    // 测试功能
-    [ContextMenu("测试：显示随机怪物")]
-    void TestRandomMonster()
+    // 怪物死亡
+    void OnDeath()
     {
-        ShowRandomMonsterForFloor(currentFloor);
+        Debug.Log("怪物死亡");
+        ShowResultPanel("胜利");
     }
 
-    [ContextMenu("测试：切换到下一层")]
-    void TestNextFloor()
+    // 玩家死亡（可以从其他脚本调用）
+    public void PlayerDeath()
     {
-        int nextFloor = currentFloor % 3 + 1;
-        ShowRandomMonsterForFloor(nextFloor);
+        ShowResultPanel("失败");
+    }
+
+    // 显示结果面板
+    void ShowResultPanel(string result)
+    {
+        if (resultPanelPrefab != null)
+        {
+            GameObject panel = Instantiate(resultPanelPrefab, Vector3.zero, Quaternion.identity);
+            panel.transform.SetParent(GameObject.Find("Canvas").transform, false); // 假设Canvas在场景中
+
+            // 设置面板文本和按钮（需要UI脚本支持）
+            //ResultPanelUI panelUI = panel.GetComponent<ResultPanelUI>();
+            //if (panelUI != null)
+            //{
+            //    panelUI.SetResultText(result);
+            //}
+        }
     }
 }
