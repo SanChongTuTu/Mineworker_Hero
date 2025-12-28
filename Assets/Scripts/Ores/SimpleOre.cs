@@ -1,39 +1,38 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using static TreeEditor.TreeEditorHelper;
 
 public class SimpleOre : MonoBehaviour
 {
     public enum OreType
     {
-        Normal = 0,     // 普通矿石 - 无效果
-        Ruby = 1,       // 红宝石矿石 - 加生命
-        Blue = 2,       // 蓝宝石矿石 - 加攻击
-        Purple = 3,     // 紫水晶矿石 - 加生命和攻击
-        Hard = -1,      // 坚硬矿石 - 无法挖掘
-        Lava = 4,        // 熔岩块 - 扣生命
+        Normal = 0,
+        Ruby = 1,
+        Blue = 2,
+        Purple = 3,
+        Hard = -1,
+        Lava = 4,
     }
 
-    [Header("矿石类型标签")]
+    [Header("矿石类型")]
     public OreType oreType = OreType.Normal;
-
-    [Header("UI图片显示")]
     public SpriteRenderer oreUIImage;
-
-    [Header("矿石图片资源 - 按顺序对应枚举")]
     public Sprite[] oreSprites;
-
-    [Header("基础挖掘时间（秒）")]
     public float baseDigTime = 1.0f;
+    public bool canClickToMine = true;
 
-    [Header("鼠标点击功能")]
-    public bool canClickToMine = true; // 是否可以通过鼠标点击挖矿
+    [Header("进度条设置")]
+    public GameObject progressBarObject; // 进度条2D物体（带SpriteRenderer）
+    public Vector2 progressBarOffset = new Vector2(0, 0.4f); // 偏移量
 
-    private float digProgress = 0f;
+    private GameObject progressBarInstance;
+    private SpriteRenderer progressBarSR;
+    private Transform progressBarTransform;
+    private Vector3 originalBarScale; // 进度条原始尺寸
+
+    private float remainingTime = 0f;
     private bool isBeingDug = false;
-    private float currentDigTime;
+    private float totalDigTime;
     public bool isMinedByMouse = false;
 
     void Start()
@@ -48,6 +47,46 @@ public class SimpleOre : MonoBehaviour
         SetBaseDigTime();
         UpdateDigTimeFromPlayerSpeed();
         AutoSetupOreImage();
+
+        // 创建进度条
+        CreateProgressBar();
+    }
+
+    void CreateProgressBar()
+    {
+        if (progressBarObject != null && progressBarInstance == null)
+        {
+            // 创建进度条作为矿石的子物体
+            progressBarInstance = Instantiate(progressBarObject, transform);
+            progressBarInstance.transform.localPosition = new Vector3(
+                progressBarOffset.x,
+                progressBarOffset.y,
+                -0.1f // Z轴稍微靠前，确保在矿石上方
+            );
+            progressBarInstance.transform.localRotation = Quaternion.identity;
+
+            // 获取组件
+            progressBarSR = progressBarInstance.GetComponent<SpriteRenderer>();
+            progressBarTransform = progressBarInstance.transform;
+
+            if (progressBarSR != null)
+            {
+                // 设置亮蓝色
+                progressBarSR.color = new Color(0f, 0.7f, 1f, 0.85f);
+                originalBarScale = progressBarTransform.localScale;
+            }
+            else
+            {
+                Debug.LogError("进度条物体没有SpriteRenderer组件！");
+            }
+
+            // 初始隐藏
+            HideProgressBar();
+        }
+        else if (progressBarObject == null)
+        {
+            Debug.LogWarning("进度条物体未设置！");
+        }
     }
 
     void SetBaseDigTime()
@@ -68,19 +107,21 @@ public class SimpleOre : MonoBehaviour
     {
         if (oreType == OreType.Hard)
         {
-            currentDigTime = float.MaxValue;
+            totalDigTime = float.MaxValue;
             return;
         }
 
         if (GameDateController.Instance != null)
         {
             float playerMineSpeed = GameDateController.Instance.minespeed;
-            currentDigTime = baseDigTime / playerMineSpeed;
+            totalDigTime = baseDigTime / playerMineSpeed;
         }
         else
         {
-            currentDigTime = baseDigTime;
+            totalDigTime = baseDigTime;
         }
+
+        remainingTime = totalDigTime; // 初始化剩余时间
     }
 
     public void AutoSetupOreImage()
@@ -89,7 +130,6 @@ public class SimpleOre : MonoBehaviour
             return;
 
         int spriteIndex = (int)oreType + 1;
-
         if (spriteIndex >= 0 && spriteIndex < oreSprites.Length)
         {
             oreUIImage.sprite = oreSprites[spriteIndex];
@@ -98,11 +138,16 @@ public class SimpleOre : MonoBehaviour
 
     void Update()
     {
-        if (isBeingDug)
+        if (isBeingDug && remainingTime > 0)
         {
-            digProgress += Time.deltaTime;
+            // 减少剩余时间
+            remainingTime -= Time.deltaTime;
+            remainingTime = Mathf.Max(0, remainingTime);
 
-            if (digProgress >= 1f)
+            // 更新进度条（显示剩余时间比例）
+            UpdateProgressBar();
+
+            if (remainingTime <= 0)
             {
                 CompleteDigging();
             }
@@ -111,16 +156,20 @@ public class SimpleOre : MonoBehaviour
 
     public void StartDigging()
     {
-        if (oreType == OreType.Hard)
-        {
-            Debug.Log("坚硬矿石无法挖掘！");
-            return;
-        }
+        if (oreType == OreType.Hard) return;
 
         if (!isBeingDug)
         {
             isBeingDug = true;
             isMinedByMouse = false;
+
+            // 如果第一次开始挖矿，初始化时间
+            if (remainingTime <= 0)
+            {
+                remainingTime = totalDigTime;
+            }
+
+            ShowProgressBar();
         }
     }
 
@@ -129,6 +178,37 @@ public class SimpleOre : MonoBehaviour
         if (isBeingDug)
         {
             isBeingDug = false;
+            HideProgressBar();
+        }
+    }
+
+    void ShowProgressBar()
+    {
+        if (progressBarInstance != null)
+        {
+            progressBarInstance.SetActive(true);
+        }
+    }
+
+    void HideProgressBar()
+    {
+        if (progressBarInstance != null)
+        {
+            progressBarInstance.SetActive(false);
+        }
+    }
+
+    void UpdateProgressBar()
+    {
+        if (progressBarTransform != null)
+        {
+            // 计算剩余时间比例（0-1）
+            float timeRatio = remainingTime / totalDigTime;
+
+            // 更新X轴缩放（从右向左减少）
+            Vector3 newScale = progressBarTransform.localScale;
+            newScale.x = originalBarScale.x * timeRatio;
+            progressBarTransform.localScale = newScale;
         }
     }
 
@@ -136,42 +216,56 @@ public class SimpleOre : MonoBehaviour
     {
         if (!canClickToMine) return;
 
-        // 检查F键挖矿管理器
         if (FMineModeManager.Instance == null)
         {
-            Debug.LogWarning("F键挖矿管理器未找到！无法使用鼠标挖矿");
+            Debug.LogWarning("F键挖矿管理器未找到！");
             return;
         }
 
-        // 尝试使用F键挖矿
         if (FMineModeManager.Instance.TryUseFMouseMine())
         {
-            // 成功使用F键挖矿
-            Debug.Log($"F键鼠标挖矿：挖掉{oreType}矿石");
             isMinedByMouse = true;
-            OreDropSpawner.Instance.DropOreIcon(this,true);
-            ParticlesController.Instance.PlayParticle(this, 1.0f);
+            OreDropSpawner.Instance?.DropOreIcon(this, true);
+            ParticlesController.Instance?.PlayParticle(this, 1.0f);
+
+            if (progressBarInstance != null)
+                Destroy(progressBarInstance);
+
             Destroy(gameObject);
         }
         else
         {
-            // F键模式未激活或已使用
             if (!FMineModeManager.Instance.isFMouseMineActive)
-            {
                 Debug.Log("请先按F键激活鼠标挖矿模式！");
-            }
             else if (FMineModeManager.Instance.hasUsedFMouseMine)
-            {
                 Debug.Log("F键模式已使用，请再次按F键激活");
-            }
         }
     }
 
     void CompleteDigging()
     {
         isMinedByMouse = false;
-        OreDropSpawner.Instance.DropOreIcon(this,false);
-        ParticlesController.Instance.PlayParticle(this, 1.0f);
+        OreDropSpawner.Instance?.DropOreIcon(this, false);
+        ParticlesController.Instance?.PlayParticle(this, 1.0f);
+
+        if (progressBarInstance != null)
+            Destroy(progressBarInstance);
+
         Destroy(gameObject);
+    }
+
+    public float GetRemainingTimeRatio()
+    {
+        return remainingTime / totalDigTime;
+    }
+
+    // 调试方法：强制显示进度条
+    public void DebugShowProgressBar()
+    {
+        if (progressBarInstance != null)
+        {
+            progressBarInstance.SetActive(true);
+            UpdateProgressBar();
+        }
     }
 }
