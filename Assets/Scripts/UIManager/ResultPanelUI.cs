@@ -14,7 +14,7 @@ public class ResultPanelUI : MonoBehaviour
     void Start()
     {
         // ³õÊ¼Òş²Ø
-        gameObject.SetActive(false);
+        //gameObject.SetActive(false);
 
         // ÉèÖÃ°´Å¥¼àÌı
         if (returnButton != null)

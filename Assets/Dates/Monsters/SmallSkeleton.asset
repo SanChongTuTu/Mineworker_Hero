@@ -16,7 +16,9 @@ MonoBehaviour:
   MonsterName: "\u5C0F\u578B\u9AB7\u9AC5"
   MonsterIcon: {fileID: 21300000, guid: 624bf9d9d17039e4191c11afeefa041d, type: 3}
   monsterLevel: 0
-  MonsterHP: 5
-  MonsterATK: 5
+  MonsterMinHP: 8
+  MonsterMaxHP: 12
+  MonsterMinATK: 2
+  MonsterMaxATK: 3
   obj: {fileID: 8034717748087867793, guid: 7deea5dc0bb92364fa7dc42965ec2ca6, type: 3}
   MonsterInfo: "\u5C0F\u578B"

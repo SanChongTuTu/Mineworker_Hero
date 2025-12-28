@@ -28,7 +28,7 @@ public class SimplePlayer : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-
+        sr=transform.GetChild(0).GetComponent<SpriteRenderer>();
 
         // 设置Rigidbody2D属性，减少滑动但保持正常物理
 
@@ -50,6 +50,8 @@ public class SimplePlayer : MonoBehaviour
 
         // 实时更新移动速度（确保movespeed变化时立即生效）
         UpdateMoveSpeedFromController();
+
+        HandleMovement();
 
         // 转向
         HandleDirectionInput();
@@ -204,8 +206,8 @@ public class SimplePlayer : MonoBehaviour
     {
         if (isDead) return;
 
-        currentHealth -= damage;
-        Debug.Log($"玩家受到{damage}点伤害，剩余生命值: {currentHealth}");
+        GameDateController.Instance.blood -= damage;
+        Debug.Log($"玩家受到{damage}点伤害，剩余生命值: {GameDateController.Instance.blood}");
 
         CheckHealth();
     }
@@ -213,11 +215,15 @@ public class SimplePlayer : MonoBehaviour
     // 检查生命值
     void CheckHealth()
     {
-        if (currentHealth <= 0 && !isDead)
+        if (FindObjectOfType<GameDateController>() != null)
         {
-            currentHealth = 0;
-            Die();
+            if (GameDateController.Instance.blood <= 0 && !isDead)
+            {
+                GameDateController.Instance.blood = 0;
+                Die();
+            }
         }
+        
     }
 
     // 玩家死亡
@@ -230,8 +236,6 @@ public class SimplePlayer : MonoBehaviour
 
         // 停止所有动作
         rb.velocity = Vector2.zero;
-        currentHorizontalVelocity = 0f;
-        targetHorizontalVelocity = 0f;
 
         // 停止动画
         if (animationController != null)
@@ -250,6 +254,7 @@ public class SimplePlayer : MonoBehaviour
         if (resultPanel != null)
         {
             // 不再传递矿石数量，脚本内部固定为10
+            resultPanel.gameObject.SetActive(true);
             resultPanel.ShowDefeat();
         }
         else
@@ -271,16 +276,14 @@ public class SimplePlayer : MonoBehaviour
     }
 
     // 获取当前生命值
-    public int GetCurrentHealth()
+    public float GetCurrentHealth()
     {
-        return currentHealth;
+        return GameDateController.Instance.blood;
     }
 
     // 立即停止移动（外部调用）
     public void StopImmediately()
     {
         rb.velocity = new Vector2(0, rb.velocity.y); // 只停止水平移动
-        currentHorizontalVelocity = 0f;
-        targetHorizontalVelocity = 0f;
     }
 }

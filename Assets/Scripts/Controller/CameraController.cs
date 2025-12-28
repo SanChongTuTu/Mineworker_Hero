@@ -5,6 +5,7 @@ public class CameraController : MonoBehaviour
     public static CameraController Instance;
 
     public GameObject battles;
+    public bool iffinish;
 
     [Header("跟随设置")]
     public Transform player;
@@ -46,7 +47,7 @@ public class CameraController : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
+        iffinish = false;
         cam = GetComponent<Camera>();
         originalSize = cam.orthographicSize;
         fixedXPosition = transform.position.x;
@@ -58,6 +59,8 @@ public class CameraController : MonoBehaviour
         if (isMovingToTarget)
         {
             MoveToTargetUpdate();
+            PlayerBattleController.Instance.enabled = true;
+            battles.SetActive(true);
         }
         else if (player != null && !isMoving)
         {
@@ -107,9 +110,6 @@ public class CameraController : MonoBehaviour
             transform.position = targetPosition;
             cam.orthographicSize = zoomInSize; // 确保最终拉近
         }
-
-        PlayerBattleController.Instance.enabled = true;
-        battles.SetActive(true);
     }
 
     public void SetFixedXPosition(float xPosition)

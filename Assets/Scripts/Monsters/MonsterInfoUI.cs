@@ -18,8 +18,10 @@ public class MonsterInfoUI : MonoBehaviour
     [Header("血条UI")]
     public Image healthbarquick; // 血条填充图片
     public Image healthbarslow;  // 血条慢速填充图片
+    public TextMeshProUGUI bloodtext;
+    public float decreasetime;
     [Header("UI提示框")]
-    public GameObject resultPanelPrefab; // 结果面板预制体
+    //public GameObject resultPanelPrefab; // 结果面板预制体
 
     public TextMeshProUGUI monsterNameText;
     public TextMeshProUGUI healthText;
@@ -61,7 +63,6 @@ public class MonsterInfoUI : MonoBehaviour
         healthbarslow.rectTransform.sizeDelta = new Vector2(300, 30);
     }
 
-
     public void Decreaseblood(float aimtime)
     {
         StartCoroutine(DecreaseBlood(aimtime));
@@ -70,6 +71,7 @@ public class MonsterInfoUI : MonoBehaviour
     IEnumerator DecreaseBlood(float aimtime)
     {
         // 更新血条UI
+        bloodtext.text = monster.MonsterHP + " / " + monster.maxblood;
         float healthRatio = (float)monster.MonsterHP / monster.maxblood;
         healthbarquick.rectTransform.sizeDelta = new Vector2(300 * healthRatio, 30);
 
@@ -111,7 +113,7 @@ public class MonsterInfoUI : MonoBehaviour
         int randomIndex = UnityEngine.Random.Range(0, availableMonsters.Length);
         currentMonsterData = availableMonsters[randomIndex];
 
-        GameObject summonobj=Instantiate(currentMonsterData.obj, new Vector3(8, -41, 0), new Quaternion(0, 0, 0, 0));
+        GameObject summonobj=Instantiate(currentMonsterData.obj, new Vector3(3, -41, 0), new Quaternion(0, 0, 0, 0));
         monster=summonobj.GetComponent<Monster>();
 
 
@@ -141,6 +143,8 @@ public class MonsterInfoUI : MonoBehaviour
             ClearUI();
             return;
         }
+
+        DecreaseBlood(decreasetime);
 
         // 怪物图标
         if (monsterIcon != null)
@@ -219,33 +223,33 @@ public class MonsterInfoUI : MonoBehaviour
         return currentMonsterData;
     }
 
-    // 怪物死亡
-    void OnDeath()
-    {
-        Debug.Log("怪物死亡");
-        ShowResultPanel("胜利");
-    }
+    //// 怪物死亡
+    //void OnDeath()
+    //{
+    //    Debug.Log("怪物死亡");
+    //    ShowResultPanel("胜利");
+    //}
 
-    // 玩家死亡（可以从其他脚本调用）
-    public void PlayerDeath()
-    {
-        ShowResultPanel("失败");
-    }
+    //// 玩家死亡（可以从其他脚本调用）
+    //public void PlayerDeath()
+    //{
+    //    ShowResultPanel("失败");
+    //}
 
-    // 显示结果面板
-    void ShowResultPanel(string result)
-    {
-        if (resultPanelPrefab != null)
-        {
-            GameObject panel = Instantiate(resultPanelPrefab, Vector3.zero, Quaternion.identity);
-            panel.transform.SetParent(GameObject.Find("Canvas").transform, false); // 假设Canvas在场景中
+    //// 显示结果面板
+    //void ShowResultPanel(string result)
+    //{
+    //    if (resultPanelPrefab != null)
+    //    {
+    //        GameObject panel = Instantiate(resultPanelPrefab, Vector3.zero, Quaternion.identity);
+    //        panel.transform.SetParent(GameObject.Find("Canvas").transform, false); // 假设Canvas在场景中
 
-            // 设置面板文本和按钮（需要UI脚本支持）
-            //ResultPanelUI panelUI = panel.GetComponent<ResultPanelUI>();
-            //if (panelUI != null)
-            //{
-            //    panelUI.SetResultText(result);
-            //}
-        }
-    }
+    //        // 设置面板文本和按钮（需要UI脚本支持）
+    //        //ResultPanelUI panelUI = panel.GetComponent<ResultPanelUI>();
+    //        //if (panelUI != null)
+    //        //{
+    //        //    panelUI.SetResultText(result);
+    //        //}
+    //    }
+    //}
 }
