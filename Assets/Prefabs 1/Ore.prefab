@@ -109,12 +109,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: fa4464829c38716478f5d57a322cbddb, type: 3}
   baseDigTime: 1
   canClickToMine: 1
-  particles:
-  - {fileID: 8187682587206988688, guid: 5bfdf002859da1f4b8dccadcb3c76cf5, type: 3}
-  - {fileID: 7906942143260503803, guid: 76677e3c6a908d04186b9691d8214e41, type: 3}
-  - {fileID: 717137299224684795, guid: e86cadf04c2db5642841ed91420ed7eb, type: 3}
-  - {fileID: 1857953637466759046, guid: 4d624665125c76b47bf040ea5d186d8b, type: 3}
-  - {fileID: 3617845184801624694, guid: 9e29ca31211cb2544b1dcc24e038a6b9, type: 3}
+  progressBarObject: {fileID: 7360963881676141815, guid: 7685e46475d554c4e82ba69a9c13ba4d, type: 3}
+  progressBarOffset: {x: 0, y: 0.4}
+  isMinedByMouse: 0
 --- !u!61 &2602890894605430222
 BoxCollider2D:
   m_ObjectHideFlags: 0
