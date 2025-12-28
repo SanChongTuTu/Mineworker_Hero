@@ -9,6 +9,9 @@ public class DepthProgressBar : MonoBehaviour
     public float maxDepth = 30f;
     public float barMaxHeight = 350f;
 
+    [Header("时间进度条引用")]
+    public TimeProgressBar timeProgressBar; // 引用时间进度条
+
     private float startY;
     private float originalBarHeight;
     private bool hasTriggered = false;
@@ -36,13 +39,16 @@ public class DepthProgressBar : MonoBehaviour
             if (progress >= 1f && !hasTriggered)
             {
                 hasTriggered = true;
-                Debug.Log("深度到达底部！");
+               
 
-                // 触发相机移动
+                // 1. 触发相机移动
                 if (CameraController.Instance != null)
                 {
                     CameraController.Instance.StartMoveToTarget();
                 }
+
+                // 2. 将时间进度条也归零
+                ForceTimeToZero();
             }
 
             if (depthBar != null)
@@ -50,6 +56,21 @@ public class DepthProgressBar : MonoBehaviour
                 Vector2 size = new Vector2(depthBar.sizeDelta.x, (1 - progress) * barMaxHeight);
                 depthBar.sizeDelta = size;
             }
+        }
+    }
+
+    // 强制时间进度条归零
+    void ForceTimeToZero()
+    {
+        if (timeProgressBar != null)
+        {
+            
+            
+            timeProgressBar.ForceTimeZero();
+        }
+        else
+        {
+            Debug.LogWarning("时间进度条引用未设置，无法同步归零");
         }
     }
 

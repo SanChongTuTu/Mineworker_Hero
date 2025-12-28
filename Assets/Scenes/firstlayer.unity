@@ -20810,6 +20810,8 @@ MonoBehaviour:
   maxX: 0
   targetYPosition: -40
   moveToTargetDuration: 1.5
+  zoomInSize: 3
+  zoomDuration: 1.5
 --- !u!1 &624011643
 GameObject:
   m_ObjectHideFlags: 0
@@ -24657,6 +24659,7 @@ MonoBehaviour:
   player: {fileID: 2138149562}
   maxDepth: 30
   barMaxHeight: 350
+  timeProgressBar: {fileID: 806896001}
 --- !u!1 &735176246
 GameObject:
   m_ObjectHideFlags: 0
