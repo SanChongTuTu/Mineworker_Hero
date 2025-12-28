@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameStatsInitializer : MonoBehaviour
 {
     [SerializeField] private string skillFileName = "skills.json";
+    [SerializeField] private string crystalFileName = "crystal.json";
 
     [Header("Base Stats (Starting Values)")]
     [SerializeField] private float baseHealth = 4f;
@@ -14,8 +15,10 @@ public class GameStatsInitializer : MonoBehaviour
     [SerializeField] private float baseMoveSpeed = 1f;
     [SerializeField] private float baseCriticalChance = 1.0f;
     [SerializeField] private float baseMiningFortune = 1.0f;
+    [SerializeField] private float baseAbsorptionCount = 1.0f;
+    [SerializeField] private float baseDimensionalPickaxeCount = 1.0f;
     
-    public enum StatType { Health, Attack, Strength, MineSpeed, MoveSpeed }
+    public enum StatType { Health, Attack, Strength, MineSpeed, MoveSpeed ,CriticalChance, MiningFortune, AbsorptionCount, DimensionalPickaxeCount }
     
     [System.Serializable]
     public class StatBonus
@@ -43,6 +46,10 @@ public class GameStatsInitializer : MonoBehaviour
         float finalStrength = baseStrength;
         float finalMineSpeed = baseMineSpeed;
         float finalMoveSpeed = baseMoveSpeed;
+        float finalCriticalChance = baseCriticalChance;
+        float finalMiningFortune = baseMiningFortune;
+        float finalAbsorptionCount = baseAbsorptionCount;
+        float finalDimensionalPickaxeCount = baseDimensionalPickaxeCount;
         
         foreach (var skillConfig in allSkills)
         {
@@ -67,6 +74,18 @@ public class GameStatsInitializer : MonoBehaviour
                         case StatType.MoveSpeed:
                             finalMoveSpeed *= bonus.multiplier;
                             break;
+                        case StatType.CriticalChance:
+                            finalCriticalChance *= bonus.multiplier;
+                            break;
+                        case StatType.MiningFortune:
+                            finalMiningFortune *= bonus.multiplier;
+                            break;
+                        case StatType.AbsorptionCount:
+                            finalAbsorptionCount *= bonus.multiplier;
+                            break;
+                        case StatType.DimensionalPickaxeCount:
+                            finalDimensionalPickaxeCount *= bonus.multiplier;
+                            break;
                     }
                 }
                 Debug.Log($"[Stats] Applied bonuses from: {skillConfig.skillName}");
@@ -80,8 +99,13 @@ public class GameStatsInitializer : MonoBehaviour
             GameDateController.Instance.strength = finalStrength;
             GameDateController.Instance.minespeed = finalMineSpeed;
             GameDateController.Instance.movespeed = finalMoveSpeed;
+            GameDateController.Instance.criticalChance = finalCriticalChance;
+            GameDateController.Instance.miningFortune = finalMiningFortune;
+            GameDateController.Instance.absorptionCount = finalAbsorptionCount;
+            GameDateController.Instance.dimensionalPickaxeCount = finalDimensionalPickaxeCount;
 
-            Debug.Log($"Stats Initialized! Health: {finalHealth}; Attack: {finalAttack}; Strength: {finalStrength}; Mining Speed: {finalMineSpeed}; Move speed: {finalMoveSpeed}");
+            Debug.Log(
+                $"Stats Initialized! Health: {finalHealth}; Attack: {finalAttack}; Strength: {finalStrength}; Mining Speed: {finalMineSpeed}; Move Speed: {finalMoveSpeed}; Critical Chance: {finalCriticalChance}; Mining Fortune: {finalMiningFortune}; Absorption Count: {finalAbsorptionCount}; Dimensional Pickaxe Count: {finalDimensionalPickaxeCount}");
         }
         else
         {
