@@ -19,7 +19,6 @@ public class MonsterInfoUI : MonoBehaviour
     public Image healthbarquick; // 血条填充图片
     public Image healthbarslow;  // 血条慢速填充图片
     public TextMeshProUGUI bloodtext;
-    public float decreasetime;
     [Header("UI提示框")]
     //public GameObject resultPanelPrefab; // 结果面板预制体
 
@@ -59,17 +58,22 @@ public class MonsterInfoUI : MonoBehaviour
         // 初始显示第1层随机怪物
         ShowRandomMonsterForFloor(currentFloor);
 
-        healthbarquick.rectTransform.sizeDelta = new Vector2(300, 30);
-        healthbarslow.rectTransform.sizeDelta = new Vector2(300, 30);
+        healthbarquick.rectTransform.sizeDelta = new Vector2(0, 30);
+        healthbarslow.rectTransform.sizeDelta = new Vector2(0, 30);
+        bloodtext.gameObject.SetActive(false);
     }
 
-    public void Decreaseblood(float aimtime)
+    public void Decreaseblood(float num)
     {
-        StartCoroutine(DecreaseBlood(aimtime));
+        StartCoroutine(DecreaseBlood((int)num));
     }
 
-    IEnumerator DecreaseBlood(float aimtime)
+    IEnumerator DecreaseBlood(int num)
     {
+        float aimtime = 0.5f;
+        monster.MonsterHP =Mathf.Max(0,monster.MonsterHP-num);
+
+
         // 更新血条UI
         bloodtext.text = monster.MonsterHP + " / " + monster.maxblood;
         float healthRatio = (float)monster.MonsterHP / monster.maxblood;
@@ -144,7 +148,7 @@ public class MonsterInfoUI : MonoBehaviour
             return;
         }
 
-        DecreaseBlood(decreasetime);
+        DecreaseBlood(0);
 
         // 怪物图标
         if (monsterIcon != null)
@@ -155,10 +159,24 @@ public class MonsterInfoUI : MonoBehaviour
 
         icon.sprite=currentMonsterData.MonsterIcon;
 
+        string character="";
+        switch (monster.MonsterCharacter)
+        {
+            case Monster.Type.active:
+                character = "<color=red>活跃的 </color>";
+                break;
+            case Monster.Type.normal:
+                character = "<color=yellow>正常的 </color>";
+                break;
+            case Monster.Type.conservative:
+                character = "<color=blue>保守的 </color>";
+                break;
+        }
+
         // 怪物名称
         if (monsterNameText != null)
         {
-            monsterNameText.text = currentMonsterData.MonsterName;
+            monsterNameText.text = character + currentMonsterData.MonsterName;
         }
 
         // 所在层数
@@ -194,14 +212,14 @@ public class MonsterInfoUI : MonoBehaviour
     {
         // 根据怪物类型返回特殊能力描述
         // 这里需要根据你的怪物类来判断
-        if (monster.MonsterName.Contains("幽灵"))
-            return "受到攻击有50%的概率不受伤害";
-        if (monster.MonsterName.Contains("蝙蝠"))
-            return "每次攻击恢复3点生命值";
-        if (monster.MonsterName.Contains("火苗"))
-            return "火焰攻击";
-        if (monster.MonsterName.Contains("藤蔓"))
-            return "缠绕攻击";
+        //if (monster.MonsterName.Contains("幽灵"))
+        //    return "受到攻击有50%的概率不受伤害";
+        //if (monster.MonsterName.Contains("蝙蝠"))
+        //    return "每次攻击恢复3点生命值";
+        //if (monster.MonsterName.Contains("火苗"))
+        //    return "火焰攻击";
+        //if (monster.MonsterName.Contains("藤蔓"))
+        //    return "缠绕攻击";
 
         return monster.MonsterInfo; // 使用CreateMonster中的介绍
     }

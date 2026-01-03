@@ -1,9 +1,12 @@
+using System.Collections;
 using UnityEngine;
 
 public class SimplePlayer : MonoBehaviour
 {
     private SimpleOre targetOre;
     private Vector2 currentDirection = Vector2.down;
+
+    public static bool canmove;
 
     [Header("移动设置")]
     public float baseMoveSpeed = 5f; // 基础移动速度
@@ -18,15 +21,33 @@ public class SimplePlayer : MonoBehaviour
     public ResultPanelUI resultPanel; // 直接引用场景中的面板
 
 
-    private Rigidbody2D rb;
+    public static Rigidbody2D rb;
     private float currentMoveSpeed; // 当前实际移动速度
     private PlayerAnimationController animationController;
-    private SpriteRenderer sr;
+    public static SpriteRenderer sr;
     private bool isDead = false;
+
+    private static SimplePlayer instance;
+    public static SimplePlayer Instance
+    {
+        get
+        {
+            if (instance == null)
+            {
+                instance = FindObjectOfType<SimplePlayer>();
+                if (instance == null)
+                {
+                    Debug.Log("No SimplePlayer!");
+                }
+            }
+            return instance;
+        }
+    }
 
 
     void Start()
     {
+        canmove = true;
         rb = GetComponent<Rigidbody2D>();
         sr=transform.GetChild(0).GetComponent<SpriteRenderer>();
 
@@ -51,16 +72,28 @@ public class SimplePlayer : MonoBehaviour
         // 实时更新移动速度（确保movespeed变化时立即生效）
         UpdateMoveSpeedFromController();
 
-        HandleMovement();
+        if (canmove)
+        {
+            HandleMovement();
 
-        // 转向
-        HandleDirectionInput();
+            // 转向
+            HandleDirectionInput();
+
+            float h = Input.GetAxis("Horizontal");
+            if (h != 0)
+            {
+                sr.flipX = h > 0;
+            }
+        }
 
         // 找矿石
         FindOre();
 
         // 挖矿控制
-        HandleDigging();
+        if (canmove)
+        {
+            HandleDigging();
+        }
 
         // 可视化射线
         Vector2 rayStart = (Vector2)transform.position + currentDirection * rayStartOffset;
@@ -76,12 +109,6 @@ public class SimplePlayer : MonoBehaviour
             {
                 animationController.StartMiningAnimation();
             }
-        }
-
-        float h = Input.GetAxis("Horizontal");
-        if (h != 0)
-        {
-            sr.flipX = h > 0;
         }
 
         // 检查生命值
@@ -173,24 +200,24 @@ public class SimplePlayer : MonoBehaviour
             return;
         }
 
-        if (Input.GetKey(KeyCode.J))
-        {
-            targetOre.StartDigging();
-            // 开始挖矿动画
-            if (animationController != null)
+            if (Input.GetKey(KeyCode.J))
             {
-                animationController.StartMiningAnimation();
+                targetOre.StartDigging();
+                // 开始挖矿动画
+                if (animationController != null)
+                {
+                    animationController.StartMiningAnimation();
+                }
             }
-        }
-        else if (Input.GetKeyUp(KeyCode.J))
-        {
-            targetOre.StopDigging();
-            // 停止挖矿动画
-            if (animationController != null)
+            else if (Input.GetKeyUp(KeyCode.J))
             {
-                animationController.StopMiningAnimation();
+                targetOre.StopDigging();
+                // 停止挖矿动画
+                if (animationController != null)
+                {
+                    animationController.StopMiningAnimation();
+                }
             }
-        }
     }
 
     Color GetDirectionColor()
@@ -201,15 +228,24 @@ public class SimplePlayer : MonoBehaviour
         return Color.white;
     }
 
-    // 受到伤害
-    public void TakeDamage(int damage)
+
+    public static IEnumerator PlayerHurt()
     {
-        if (isDead) return;
+        sr.color = Color.red;
+        yield return new WaitForSeconds(0.25f);
+        sr.color = Color.white;
+        yield break;
+    }
+
+    // 受到伤害
+    public static void TakeDamage(int damage)
+    {
+        if (instance.isDead) return;
 
         GameDateController.Instance.blood -= damage;
         Debug.Log($"玩家受到{damage}点伤害，剩余生命值: {GameDateController.Instance.blood}");
 
-        CheckHealth();
+        instance.CheckHealth();
     }
 
     // 检查生命值

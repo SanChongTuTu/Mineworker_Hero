@@ -46,7 +46,7 @@ public class UIManager : MonoBehaviour
     {
         if (bloodText != null && GameDateController.Instance != null)
         {
-            bloodText.text = "ÉúÃüÖµ£º" + GameDateController.Instance.blood.ToString();
+            bloodText.text = GameDateController.Instance.blood.ToString();
         }
     }
 
@@ -54,7 +54,7 @@ public class UIManager : MonoBehaviour
     {
         if (attackText != null && GameDateController.Instance != null)
         {
-            attackText.text = "¹¥»÷Á¦£º" + GameDateController.Instance.attack.ToString();
+            attackText.text = GameDateController.Instance.attack.ToString();
         }
     }
 

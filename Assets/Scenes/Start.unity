@@ -409,6 +409,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07868015b1976b74e93008584527d4ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxblood: 0
+  maxattack: 0
   monster: {fileID: 11400000, guid: 67eac83cb4fcc4641aa0bfbaabe460b3, type: 2}
   MonsterName: 
   MonsterHP: 0
@@ -3388,7 +3390,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -3739,7 +3741,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1402196273}
+      - m_Target: {fileID: 1757653241}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -3993,7 +3995,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 275.00003, y: 213}
+  m_AnchoredPosition: {x: -15.2, y: 34.1}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &782021766
@@ -4560,8 +4562,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 120, y: 218}
-  m_SizeDelta: {x: 50, y: 50}
+  m_AnchoredPosition: {x: -169.1, y: 39.6}
+  m_SizeDelta: {x: 80, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &891543780
 MonoBehaviour:
@@ -4576,15 +4578,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.91103065, b: 0.58679235, a: 0.7372549}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 6b232407719980b4e9d0ae8b983c8b3e, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -4742,7 +4744,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -6105,7 +6107,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -169, y: 149.99998}
-  m_SizeDelta: {x: 50, y: 50}
+  m_SizeDelta: {x: 60, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1105703235
 MonoBehaviour:
@@ -6120,14 +6122,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: dc51b051e79987b4da61f71233ccc56a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8048,6 +8050,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e50bbec6ac2c19d43af84107986911b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxblood: 0
+  maxattack: 0
   monster: {fileID: 11400000, guid: 0724d681eb59b46428bcc9ab662b2b72, type: 2}
   MonsterName: 
   MonsterHP: 0
@@ -9323,7 +9327,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -10377,6 +10381,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d1d6b8b08a80e84991d9358a45c84ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxblood: 0
+  maxattack: 0
   monster: {fileID: 11400000, guid: f41cf342d94294641b32e0b593bd1659, type: 2}
   MonsterName: 
   MonsterHP: 0
@@ -10415,8 +10421,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -169, y: 82.999985}
-  m_SizeDelta: {x: 50, y: 50}
+  m_AnchoredPosition: {x: -169, y: 99}
+  m_SizeDelta: {x: 60, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1682628703
 MonoBehaviour:
@@ -10431,14 +10437,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.75416994, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: ec43fe21c035dfa4a98c61b2358f3e01, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10582,7 +10588,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -10640,7 +10646,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -14.000008, y: 77.999985}
+  m_AnchoredPosition: {x: -14.000008, y: 90}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1740019517
@@ -11257,6 +11263,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 506665b56c74f294e83a9ddca45e0184, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxblood: 0
+  maxattack: 0
   monster: {fileID: 11400000, guid: cd10936cf34743943bb0bbfbd87381d8, type: 2}
   MonsterName: 
   MonsterHP: 0
@@ -11911,6 +11919,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 191863a8cb903924292e8f625f52609c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxblood: 0
+  maxattack: 0
   monster: {fileID: 11400000, guid: 2f24f6414e4bf3047829a649cd157a41, type: 2}
   MonsterName: 
   MonsterHP: 0
@@ -12077,7 +12087,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -12845,6 +12855,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e4772a3e11ade6419c1579c7470f4ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxblood: 0
+  maxattack: 0
   monster: {fileID: 11400000, guid: 067d859c81b9cdc44a4bdf26bb0398d8, type: 2}
   MonsterName: 
   MonsterHP: 0
@@ -13313,7 +13325,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:

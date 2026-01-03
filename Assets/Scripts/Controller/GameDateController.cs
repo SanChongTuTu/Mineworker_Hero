@@ -52,6 +52,8 @@ public class GameDateController : MonoBehaviour
     public float blood;
     [Header("攻击")]
     public float attack;
+    [Header("临时攻击加成")]
+    public float tempAttackBonus;
     [Header("��ҵ�ǰ��������")]
     public float strength;
     [Header("挖矿速度")]

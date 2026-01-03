@@ -58,7 +58,7 @@ public class OreDropSpawner : MonoBehaviour
                 }
                 else
                 {
-                    StartCoroutine(PlayerHurt());
+                    StartCoroutine(SimplePlayer.PlayerHurt());
                     ApplyOreEffect(theoreType, ismouse);
                 }
                 return;
@@ -136,13 +136,5 @@ public class OreDropSpawner : MonoBehaviour
                 UIManager.Instance.AddGem(oreType);
             }
         }
-    }
-
-    IEnumerator PlayerHurt()
-    {
-        player.color=Color.red;
-        yield return new WaitForSeconds(0.25f);
-        player.color=Color.white;
-        yield break;
     }
 }

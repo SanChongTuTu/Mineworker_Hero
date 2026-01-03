@@ -60,9 +60,12 @@ public class PlayerAnimationController : MonoBehaviour
     bool IsPlayerMining()
     {
         // 检查是否按着挖矿键
-        if (Input.GetKey(KeyCode.J))
+        if (SimplePlayer.canmove)
         {
-            return true;
+            if (Input.GetKey(KeyCode.J))
+            {
+                return true;
+            }
         }
 
         // 或者检查是否有目标矿石正在被挖掘

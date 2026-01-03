@@ -7,11 +7,6 @@ public class SmallFire : Monster
     // Start is called before the first frame update
     void Start()
     {
-        MonsterName=monster.MonsterName;
-        maxblood=Random.Range(monster.MonsterMinHP, monster.MonsterMaxHP + 1);
-        maxattack = Random.Range(monster.MonsterMinATK, monster.MonsterMaxATK + 1);
-        MonsterHP =maxblood;
-        MonsterATK = maxattack;
 
     }
 
@@ -19,5 +14,18 @@ public class SmallFire : Monster
     void Update()
     {
         
+    }
+
+    public override void Action()
+    {
+        int rand = Random.Range(0, 100);
+        if (rand <= MonsterATKProbability)
+        {
+            monsterChooseSkill = ChooseSkill.attack;
+        }
+        else
+        {
+            monsterChooseSkill = ChooseSkill.defence;
+        }
     }
 }

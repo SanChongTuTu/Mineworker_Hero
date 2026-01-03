@@ -3,7 +3,23 @@ using UnityEngine.UI;
 
 public class FMineModeManager : MonoBehaviour
 {
-    public static FMineModeManager Instance;
+    private static FMineModeManager instance;
+    public static FMineModeManager Instance
+    {
+        get
+        {
+            if(instance == null)
+            {
+                instance=FindObjectOfType<FMineModeManager>();
+                if (instance == null)
+                {
+                    Debug.Log("No F");
+                }
+            }
+
+            return instance;
+        }
+    }
 
     public bool isFMouseMineActive = false;  // F键模式是否激活
     public bool hasUsedFMouseMine = false;   // 本次是否已使用
@@ -12,15 +28,7 @@ public class FMineModeManager : MonoBehaviour
 
     void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-            //DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+
     }
 
     void Update()
