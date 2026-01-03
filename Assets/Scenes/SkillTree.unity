@@ -388,8 +388,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1136.7534, y: 397.9372}
+  m_AnchoredPosition: {x: 570, y: -178}
+  m_SizeDelta: {x: 166.9554, y: 57.2439}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &58711483
 MonoBehaviour:
@@ -438,8 +438,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 181.8
-  m_fontSizeBase: 181.8
+  m_fontSize: 32.89
+  m_fontSizeBase: 32.89
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -528,7 +528,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 400, y: -183}
+  m_AnchoredPosition: {x: 280, y: -100}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &74638410
@@ -640,6 +640,8 @@ MonoBehaviour:
   costText: {fileID: 1467479578}
   enabledText: "\u5DF2\u89E3\u9501"
   disabledText: "\u672A\u89E3\u9501"
+  unlockBtn: {fileID: 1888006301}
+  lockBtn: {fileID: 558747783}
   grayscaleMaterial: {fileID: 2100000, guid: f93cda58c53e6d8479d7b2b74ce4c5ee, type: 2}
   skill: {fileID: 74638408}
   title: "\u653B\u51FB\u589E\u5E45"
@@ -887,7 +889,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -400}
+  m_AnchoredPosition: {x: -9, y: -253}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &108772186
@@ -989,6 +991,8 @@ MonoBehaviour:
   costText: {fileID: 1467479578}
   enabledText: "\u5DF2\u89E3\u9501"
   disabledText: "\u672A\u89E3\u9501"
+  unlockBtn: {fileID: 1888006301}
+  lockBtn: {fileID: 558747783}
   grayscaleMaterial: {fileID: 2100000, guid: f93cda58c53e6d8479d7b2b74ce4c5ee, type: 2}
   skill: {fileID: 108772183}
   title: "\u57FA\u7840\u5F3A\u5316"
@@ -1108,7 +1112,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -400, y: 100}
+  m_AnchoredPosition: {x: -243, y: 38}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &113865073
@@ -1134,6 +1138,8 @@ MonoBehaviour:
   costText: {fileID: 1467479578}
   enabledText: "\u5DF2\u89E3\u9501"
   disabledText: "\u672A\u89E3\u9501"
+  unlockBtn: {fileID: 1888006301}
+  lockBtn: {fileID: 558747783}
   grayscaleMaterial: {fileID: 2100000, guid: f93cda58c53e6d8479d7b2b74ce4c5ee, type: 2}
   skill: {fileID: 113865068}
   title: "\u65F6\u8FD0\u4E4B\u9550"
@@ -1205,7 +1211,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 244, y: -183}
+  m_AnchoredPosition: {x: 120, y: -100}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &129961811
@@ -1291,6 +1297,8 @@ MonoBehaviour:
   costText: {fileID: 1467479578}
   enabledText: "\u5DF2\u89E3\u9501"
   disabledText: "\u672A\u89E3\u9501"
+  unlockBtn: {fileID: 1888006301}
+  lockBtn: {fileID: 558747783}
   grayscaleMaterial: {fileID: 2100000, guid: f93cda58c53e6d8479d7b2b74ce4c5ee, type: 2}
   skill: {fileID: 129961809}
   title: "\u751F\u547D\u589E\u5E45"
@@ -1791,8 +1799,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 795.99, y: 388}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 795.99, y: 402.2098}
+  m_SizeDelta: {x: 200, y: 78.417}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &298477146
 MonoBehaviour:
@@ -1841,15 +1849,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 83.48
+  m_fontSizeBase: 83.48
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 4
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -4307,7 +4315,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -400, y: -183}
+  m_AnchoredPosition: {x: -300, y: -100}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &991572453
@@ -4419,6 +4427,8 @@ MonoBehaviour:
   costText: {fileID: 1467479578}
   enabledText: "\u5DF2\u89E3\u9501"
   disabledText: "\u672A\u89E3\u9501"
+  unlockBtn: {fileID: 1888006301}
+  lockBtn: {fileID: 558747783}
   grayscaleMaterial: {fileID: 2100000, guid: f93cda58c53e6d8479d7b2b74ce4c5ee, type: 2}
   skill: {fileID: 991572451}
   title: "\u5FEB\u901F\u6316\u6398"
@@ -5282,7 +5292,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 400, y: 100}
+  m_AnchoredPosition: {x: 201, y: 38}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1191624134
@@ -5334,6 +5344,8 @@ MonoBehaviour:
   costText: {fileID: 1467479578}
   enabledText: "\u5DF2\u89E3\u9501"
   disabledText: "\u672A\u89E3\u9501"
+  unlockBtn: {fileID: 1888006301}
+  lockBtn: {fileID: 558747783}
   grayscaleMaterial: {fileID: 2100000, guid: f93cda58c53e6d8479d7b2b74ce4c5ee, type: 2}
   skill: {fileID: 1191624128}
   title: "\u5F3A\u8EAB\u5065\u4F53"
@@ -7145,9 +7157,47 @@ MonoBehaviour:
   baseMoveSpeed: 1
   baseCriticalChance: 1
   baseMiningFortune: 1
-  baseAbsorptionCount: 1
-  baseDimensionalPickaxeCount: 1
-  allSkills: []
+  baseAbsorptionCount: 0
+  baseDimensionalPickaxeCount: 0
+  allSkills:
+  - skillName: BasicReinforcement
+    bonuses:
+    - targetStat: 0
+      multiplier: 1
+    - targetStat: 1
+      multiplier: 1
+  - skillName: MiningSpeedBoost
+    bonuses:
+    - targetStat: 3
+      multiplier: 0.5
+  - skillName: GoneWithTheWind
+    bonuses:
+    - targetStat: 4
+      multiplier: 0.5
+  - skillName: ManiacMiner
+    bonuses:
+    - targetStat: 1
+      multiplier: 2
+  - skillName: FerociousDamage
+    bonuses:
+    - targetStat: 5
+      multiplier: 0.25
+  - skillName: FortunatePickaxe
+    bonuses:
+    - targetStat: 6
+      multiplier: 0.25
+  - skillName: DimensionalPower
+    bonuses:
+    - targetStat: 8
+      multiplier: 1
+  - skillName: AbsorptionShield
+    bonuses:
+    - targetStat: 7
+      multiplier: 1
+  - skillName: HealthPool
+    bonuses:
+    - targetStat: 0
+      multiplier: 2
 --- !u!1 &1598463584
 GameObject:
   m_ObjectHideFlags: 0
@@ -7415,81 +7465,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1599151682}
-  m_CullTransparentMesh: 1
---- !u!1 &1634527134
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1634527135}
-  - component: {fileID: 1634527137}
-  - component: {fileID: 1634527136}
-  m_Layer: 5
-  m_Name: Background
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1634527135
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1634527134}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2083886845}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7.3602, y: -2.6765}
-  m_SizeDelta: {x: 1969.4929, y: 1119.7235}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1634527136
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1634527134}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.3764706}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1634527137
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1634527134}
   m_CullTransparentMesh: 1
 --- !u!1 &1650139888
 GameObject:
@@ -8055,7 +8030,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -245, y: -183}
+  m_AnchoredPosition: {x: -143, y: -100}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1893086408
@@ -8167,6 +8142,8 @@ MonoBehaviour:
   costText: {fileID: 1467479578}
   enabledText: "\u5DF2\u89E3\u9501"
   disabledText: "\u672A\u89E3\u9501"
+  unlockBtn: {fileID: 1888006301}
+  lockBtn: {fileID: 558747783}
   grayscaleMaterial: {fileID: 2100000, guid: f93cda58c53e6d8479d7b2b74ce4c5ee, type: 2}
   skill: {fileID: 1893086406}
   title: "\u795E\u884C\u5982\u98CE"
@@ -8369,7 +8346,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -400, y: 288}
+  m_AnchoredPosition: {x: -243, y: 185}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2037591190
@@ -8454,6 +8431,8 @@ MonoBehaviour:
   costText: {fileID: 1467479578}
   enabledText: "\u5DF2\u89E3\u9501"
   disabledText: "\u672A\u89E3\u9501"
+  unlockBtn: {fileID: 1888006301}
+  lockBtn: {fileID: 558747783}
   grayscaleMaterial: {fileID: 2100000, guid: f93cda58c53e6d8479d7b2b74ce4c5ee, type: 2}
   skill: {fileID: 2037591188}
   title: "\u8D85\u65F6\u7A7A\u9550"
@@ -8525,7 +8504,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 400, y: 288}
+  m_AnchoredPosition: {x: 201, y: 185}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2065642691
@@ -8610,6 +8589,8 @@ MonoBehaviour:
   costText: {fileID: 1467479578}
   enabledText: "\u5DF2\u89E3\u9501"
   disabledText: "\u672A\u89E3\u9501"
+  unlockBtn: {fileID: 1888006301}
+  lockBtn: {fileID: 558747783}
   grayscaleMaterial: {fileID: 2100000, guid: f93cda58c53e6d8479d7b2b74ce4c5ee, type: 2}
   skill: {fileID: 2065642689}
   title: "\u94A2\u76D4\u58C1\u5792"
@@ -8744,7 +8725,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1634527135}
   - {fileID: 58711482}
   m_Father: {fileID: 1140351018}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
