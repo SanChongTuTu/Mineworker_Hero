@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7228369595177723565}
   - component: {fileID: 6699284256665856635}
   - component: {fileID: 1821478193131799887}
+  - component: {fileID: 8770427926693506491}
   m_Layer: 0
   m_Name: BigSkeleton
   m_TagString: Untagged
@@ -171,7 +172,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d1d6b8b08a80e84991d9358a45c84ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxblood: 0
+  maxattack: 0
   monster: {fileID: 11400000, guid: f41cf342d94294641b32e0b593bd1659, type: 2}
   MonsterName: 
   MonsterHP: 0
   MonsterATK: 0
+--- !u!114 &8770427926693506491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2679445636138875938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb05a1c394102a489e124dfee492b15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monster: {fileID: 0}
+  resultPanel: {fileID: 0}
+  crystalCalculator: {fileID: 0}
