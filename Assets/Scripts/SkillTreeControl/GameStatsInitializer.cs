@@ -60,31 +60,31 @@ public class GameStatsInitializer : MonoBehaviour
                     switch (bonus.targetStat)
                     {
                         case StatType.Health:
-                            finalHealth *= bonus.multiplier;
+                            finalHealth += bonus.multiplier;
                             break;
                         case StatType.Attack:
-                            finalAttack *= bonus.multiplier;
+                            finalAttack += bonus.multiplier;
                             break;
                         case StatType.Strength:
-                            finalStrength *= bonus.multiplier;
+                            finalStrength += bonus.multiplier;
                             break;
                         case StatType.MineSpeed:
-                            finalMineSpeed *= bonus.multiplier;
+                            finalMineSpeed += bonus.multiplier;
                             break;
                         case StatType.MoveSpeed:
-                            finalMoveSpeed *= bonus.multiplier;
+                            finalMoveSpeed += bonus.multiplier;
                             break;
                         case StatType.CriticalChance:
-                            finalCriticalChance *= bonus.multiplier;
+                            finalCriticalChance += bonus.multiplier;
                             break;
                         case StatType.MiningFortune:
-                            finalMiningFortune *= bonus.multiplier;
+                            finalMiningFortune += bonus.multiplier;
                             break;
                         case StatType.AbsorptionCount:
-                            finalAbsorptionCount *= bonus.multiplier;
+                            finalAbsorptionCount += bonus.multiplier;
                             break;
                         case StatType.DimensionalPickaxeCount:
-                            finalDimensionalPickaxeCount *= bonus.multiplier;
+                            finalDimensionalPickaxeCount += bonus.multiplier;
                             break;
                     }
                 }
