@@ -20,6 +20,8 @@ public class ShowInfo : MonoBehaviour
     public TMP_Text costText;
     public string enabledText;
     public string disabledText;
+    public Button unlockBtn;
+    public Button lockBtn;
     
     public Material grayscaleMaterial;
 
@@ -64,6 +66,8 @@ public class ShowInfo : MonoBehaviour
         List<SkillActiveInputEntry> entries = FileHandler.LoadFromJSON<SkillActiveInputEntry>(fileName);
         var existingEntry = entries.FirstOrDefault(s => s.skillName == skill.name);
         
+        UpdateButtonInteraction();
+        
         if (existingEntry == null || !existingEntry.isActive)
         {
             statusText.text = disabledText;
@@ -90,8 +94,27 @@ public class ShowInfo : MonoBehaviour
         smallIcon.material = null;
     }
 
+    public void UpdateButtonInteraction()
+    {
+        List<SkillActiveInputEntry> entries = FileHandler.LoadFromJSON<SkillActiveInputEntry>(fileName);
+        var existingEntry = entries.FirstOrDefault(s => s.skillName == skill.name);
+        
+        if (existingEntry == null || !existingEntry.isActive)
+        {
+            smallIcon.material = grayscaleMaterial;
+            unlockBtn.interactable = true;
+            lockBtn.interactable = false;
+            return;
+        }
+        unlockBtn.interactable = false;
+        lockBtn.interactable = true;
+        smallIcon.material = null;
+    }
+
     private void Start()
     {
         smallIcon.material = grayscaleMaterial;
+        UpdateButtonInteraction();
+        UpdateSmallIcon();
     }
 }
