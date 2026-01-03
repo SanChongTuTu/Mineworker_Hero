@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5990379121819238210}
   - component: {fileID: 3364925351195005975}
   - component: {fileID: 2170215201207714324}
+  - component: {fileID: -9098557737475939877}
   m_Layer: 0
   m_Name: Vine
   m_TagString: Untagged
@@ -171,7 +172,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e4772a3e11ade6419c1579c7470f4ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxblood: 0
+  maxattack: 0
   monster: {fileID: 11400000, guid: 067d859c81b9cdc44a4bdf26bb0398d8, type: 2}
   MonsterName: 
   MonsterHP: 0
   MonsterATK: 0
+--- !u!114 &-9098557737475939877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233764908564305266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb05a1c394102a489e124dfee492b15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monster: {fileID: 0}
+  resultPanel: {fileID: 0}
+  crystalCalculator: {fileID: 0}

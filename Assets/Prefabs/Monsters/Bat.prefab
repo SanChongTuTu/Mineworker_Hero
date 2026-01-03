@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4110956610091344514}
   - component: {fileID: 789689211668182760}
   - component: {fileID: 2433873039597478378}
+  - component: {fileID: -4000487842709344807}
   m_Layer: 0
   m_Name: Bat
   m_TagString: Untagged
@@ -126,6 +127,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07868015b1976b74e93008584527d4ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxblood: 0
+  maxattack: 0
   monster: {fileID: 11400000, guid: 67eac83cb4fcc4641aa0bfbaabe460b3, type: 2}
   MonsterName: 
   MonsterHP: 0
@@ -175,3 +178,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 32.866047, y: 32.850002}
   m_EdgeRadius: 0
+--- !u!114 &-4000487842709344807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6351564082040034259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb05a1c394102a489e124dfee492b15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monster: {fileID: 0}
+  resultPanel: {fileID: 0}
+  crystalCalculator: {fileID: 0}

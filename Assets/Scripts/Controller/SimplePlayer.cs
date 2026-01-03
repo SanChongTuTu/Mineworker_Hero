@@ -16,7 +16,7 @@ public class SimplePlayer : MonoBehaviour
 
     [Header("UI引用")]
     public ResultPanelUI resultPanel; // 直接引用场景中的面板
-
+    public CrystalCalc crystalCalculator;
 
     private Rigidbody2D rb;
     private float currentMoveSpeed; // 当前实际移动速度
@@ -27,6 +27,7 @@ public class SimplePlayer : MonoBehaviour
 
     void Start()
     {
+        //MonsterInfoUI.Instance.monster.MonsterHP
         rb = GetComponent<Rigidbody2D>();
         sr=transform.GetChild(0).GetComponent<SpriteRenderer>();
 
@@ -249,26 +250,73 @@ public class SimplePlayer : MonoBehaviour
     }
 
     // 显示失败面板
+    // 显示失败面板
+    
+
+    // 计算获得的超能矿石
+    // 计算获得的超能矿石（修正版）
+    int CalculateOreGained()
+    {
+        // 如果有计算器，使用计算器
+        if (crystalCalculator != null)
+        {
+            // 获取当前怪物信息
+            if (MonsterInfoUI.Instance != null && MonsterInfoUI.Instance.monster != null)
+            {
+                Monster monster = MonsterInfoUI.Instance.monster;
+
+                // 获取当前层数
+                int currentLayer = MonsterInfoUI.Instance.currentFloor;
+
+                // 获取怪物最大血量（使用maxblood）
+                int monsterMaxHP = monster.maxblood;
+
+                // 怪物当前血量（玩家死亡时怪物还活着）
+                int monsterCurrentHP = monster.MonsterHP;
+
+                // 玩家死亡，所以没有击败怪物
+                bool isDefeated = false;
+
+                // 计算超能矿石
+                return crystalCalculator.CalcLayerCrystals(
+                    currentLayer,
+                    monsterMaxHP,
+                    monsterCurrentHP,
+                    isDefeated
+                );
+            }
+            else
+            {
+                Debug.LogWarning("无法获取怪物信息，使用默认计算");
+                // 没有怪物信息时，只获得挖矿结束的1个
+                return 1;
+            }
+        }
+        else
+        {
+            Debug.LogWarning("crystalCalculator未设置，使用随机值");
+            return Random.Range(0, 10);
+        }
+    }
+
+    // 显示失败面板
     void ShowDefeat()
     {
         if (resultPanel != null)
         {
-            // 不再传递矿石数量，脚本内部固定为10
+            // 计算超能矿石
+            int crystalCount = CalculateOreGained();
+
+            // 设置矿石数量并显示
+            resultPanel.number = crystalCount;
             resultPanel.gameObject.SetActive(true);
-            resultPanel.ShowDefeat();
+            resultPanel.ShowDefeat(crystalCount);
         }
         else
         {
             Debug.LogError("结果面板引用未设置！");
         }
     }
-
-    // 计算获得的超能矿石
-    int CalculateOreGained()
-    {
-        return Random.Range(0, 10);
-    }
-
     // 获取当前移动速度
     public float GetCurrentMoveSpeed()
     {
