@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7942007923876034821}
   - component: {fileID: 7619210363761974086}
   - component: {fileID: 8220256689904277374}
+  - component: {fileID: -7684176291073586177}
   m_Layer: 0
   m_Name: SmallFire
   m_TagString: Untagged
@@ -99,6 +100,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e50bbec6ac2c19d43af84107986911b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxblood: 0
+  maxattack: 0
   monster: {fileID: 11400000, guid: 0724d681eb59b46428bcc9ab662b2b72, type: 2}
   MonsterName: 
   MonsterHP: 0
@@ -175,3 +178,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 5
+--- !u!114 &-7684176291073586177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5275838966628493569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb05a1c394102a489e124dfee492b15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monster: {fileID: 0}
+  resultPanel: {fileID: 0}
+  crystalCalculator: {fileID: 0}

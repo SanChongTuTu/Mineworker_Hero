@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using TMPro;
+using System.ComponentModel;
 
 public class ResultPanelUI : MonoBehaviour
 {
@@ -18,10 +19,15 @@ public class ResultPanelUI : MonoBehaviour
 
         // 设置按钮监听
         if (returnButton != null)
-            returnButton.onClick.AddListener(() => Debug.Log("返回主页"));
+            returnButton.onClick.AddListener(() => {
+                Time.timeScale = 1;
+            });
 
         if (nextButton != null)
-            nextButton.onClick.AddListener(() => Debug.Log("下一关"));
+            nextButton.onClick.AddListener(() =>
+            {
+                Time.timeScale = 1;
+            });
 
         // 初始隐藏下一关按钮
         if (nextButton != null)
@@ -29,8 +35,10 @@ public class ResultPanelUI : MonoBehaviour
     }
 
     // 显示胜利界面（两个按钮）
-    public void ShowVictory()
+    public void ShowVictory(int crystalCount)
     {
+        number = crystalCount;
+        Time.timeScale= 0;
         gameObject.SetActive(true);
 
         if (nextButton != null)
@@ -40,8 +48,10 @@ public class ResultPanelUI : MonoBehaviour
     }
 
     // 显示失败界面（一个按钮）
-    public void ShowDefeat()
+    public void ShowDefeat(int crystalCount)
     {
+        number = crystalCount;
+        Time.timeScale = 0;
         gameObject.SetActive(true);
 
         if (nextButton != null)
@@ -63,7 +73,7 @@ public class ResultPanelUI : MonoBehaviour
         }
     }
 
-    // 开始计数动画：1秒内从0数到10
+    
     void StartCounting()
     {
         // 停止之前的计数

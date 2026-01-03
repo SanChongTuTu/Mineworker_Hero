@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8907993439381375230}
   - component: {fileID: 7310138211692916369}
   - component: {fileID: 110878760094257874}
+  - component: {fileID: -2497961111437392627}
   m_Layer: 0
   m_Name: SmallSkeleton
   m_TagString: Untagged
@@ -99,6 +100,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 506665b56c74f294e83a9ddca45e0184, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxblood: 0
+  maxattack: 0
   monster: {fileID: 11400000, guid: cd10936cf34743943bb0bbfbd87381d8, type: 2}
   MonsterName: 
   MonsterHP: 0
@@ -175,3 +178,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 5
+--- !u!114 &-2497961111437392627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8034717748087867793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb05a1c394102a489e124dfee492b15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monster: {fileID: 0}
+  resultPanel: {fileID: 0}
+  crystalCalculator: {fileID: 0}

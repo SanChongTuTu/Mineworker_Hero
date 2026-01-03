@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3613541452561050752}
   - component: {fileID: 1158377557488346392}
   - component: {fileID: 5791101333508751773}
+  - component: {fileID: -7459478363338058839}
   m_Layer: 0
   m_Name: Ghost
   m_TagString: Untagged
@@ -126,6 +127,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 191863a8cb903924292e8f625f52609c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxblood: 0
+  maxattack: 0
   monster: {fileID: 11400000, guid: 2f24f6414e4bf3047829a649cd157a41, type: 2}
   MonsterName: 
   MonsterHP: 0
@@ -175,3 +178,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 22.217678, y: 30.760002}
   m_EdgeRadius: 0
+--- !u!114 &-7459478363338058839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1600188641736677441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb05a1c394102a489e124dfee492b15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monster: {fileID: 0}
+  resultPanel: {fileID: 0}
+  crystalCalculator: {fileID: 0}

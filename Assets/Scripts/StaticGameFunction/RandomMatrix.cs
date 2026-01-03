@@ -191,7 +191,7 @@ public static class RandomMatrix
                 lastgetnum++;
             }
 
-
+            
             if (lastgetnum == getnum)
             {
                 return savequeue;
