@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/firstlayer.unity
     guid: 65009118145273c43a05379188400c07
+  - enabled: 1
+    path: Assets/Scenes/twolayer.unity
+    guid: 507bba633185ba54bb98737823832283
+  - enabled: 1
+    path: Assets/Scenes/threelayer.unity
+    guid: ec6b82eb08083224eb317f771074e576
   m_configObjects: {}

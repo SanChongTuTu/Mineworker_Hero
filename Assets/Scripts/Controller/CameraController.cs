@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class CameraController : MonoBehaviour
@@ -5,6 +6,7 @@ public class CameraController : MonoBehaviour
     public static CameraController Instance;
 
     public GameObject battles;
+    public GameObject activeskill;
     public bool iffinish;
 
     [Header("跟随设置")]
@@ -59,8 +61,6 @@ public class CameraController : MonoBehaviour
         if (isMovingToTarget)
         {
             MoveToTargetUpdate();
-            PlayerBattleController.Instance.enabled = true;
-            battles.SetActive(true);
         }
         else if (player != null && !isMoving)
         {
@@ -89,12 +89,27 @@ public class CameraController : MonoBehaviour
 
     void MoveToTargetUpdate()
     {
+        if(GameDateController.Instance!=null)
+        GameDateController.Instance.maxblood = GameDateController.Instance.blood;
+        SimplePlayer.canmove = false;
+        FMineModeManager.Instance.skillimage.color = Color.grey;
+        FMineModeManager.Instance.skilltext.color = Color.grey;
+        if(MouseCursorChanger.Instance != null )
+        MouseCursorChanger.Instance.RestoreDefault();
+        FMineModeManager.Instance.enabled = false;
+        activeskill.SetActive(false);
+
         float elapsedTime = Time.time - moveStartTime;
         float moveProgress = Mathf.Clamp01(elapsedTime / moveToTargetDuration);
 
         // 移动相机到目标位置
         Vector3 targetPosition = new Vector3(fixedXPosition, targetYPosition, offset.z);
         transform.position = Vector3.Lerp(startPosition, targetPosition, moveProgress);
+
+        player.transform.position=new Vector3(-1, -41.5f, player.transform.position.z);
+        SimplePlayer.rb.velocity = new Vector2(0, 0);
+        player.transform.position = new Vector3(-1, -41.5f, player.transform.position.z);
+        SimplePlayer.sr.flipX = true;
 
         // 同时拉近摄像机（视野变小）
         if (zoomDuration > 0)
@@ -109,7 +124,48 @@ public class CameraController : MonoBehaviour
             isMovingToTarget = false;
             transform.position = targetPosition;
             cam.orthographicSize = zoomInSize; // 确保最终拉近
+            StartCoroutine(OpenBattle());
+            iffinish = true;
         }
+    }
+
+    IEnumerator OpenBattle()
+    {
+        yield return new WaitForSeconds(1f);
+        //PlayerBattleController.Instance.enabled = true;
+        battles.SetActive(true);
+
+        float nowx = 0;
+        while (MonsterInfoUI.Instance.healthbarquick.rectTransform.sizeDelta.x <300)
+        {
+            nowx += Time.deltaTime;
+            MonsterInfoUI.Instance.healthbarquick.rectTransform.sizeDelta = new Vector2(nowx*150, 30);
+            yield return null;
+        }
+        MonsterInfoUI.Instance.healthbarquick.rectTransform.sizeDelta = new Vector2(300, 30);
+        MonsterInfoUI.Instance.healthbarslow.rectTransform.sizeDelta = new Vector2(300, 30);
+        yield return new WaitForSeconds(0.2f);
+
+        int time = 0;
+        while (time < 0)
+        {
+            MonsterInfoUI.Instance.healthbarquick.gameObject.SetActive(false);
+            yield return new WaitForSeconds(0.2f);
+            MonsterInfoUI.Instance.healthbarquick.gameObject.SetActive(true);
+            yield return new WaitForSeconds(0.2f);
+            time++;
+        }
+        MonsterInfoUI.Instance.healthbarquick.gameObject.SetActive(false);
+        yield return new WaitForSeconds(0.2f);
+        MonsterInfoUI.Instance.healthbarquick.gameObject.SetActive(true);
+
+        MonsterInfoUI.Instance.bloodtext.gameObject.SetActive(true);
+        MonsterInfoUI.Instance.Decreaseblood(0.5f);
+        yield return new WaitForSeconds(1);
+
+        BattleController.Instance.inround = true;
+
+        yield break;
     }
 
     public void SetFixedXPosition(float xPosition)

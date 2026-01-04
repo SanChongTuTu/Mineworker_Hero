@@ -50,8 +50,12 @@ public class GameDateController : MonoBehaviour
     public List<ResourceInfo> resources;
     [Header("生命ֵ")]
     public float blood;
+    [Header("生命上限")]
+    public float maxblood;
     [Header("攻击")]
     public float attack;
+    [Header("临时攻击加成")]
+    public float tempAttackBonus;
     [Header("��ҵ�ǰ��������")]
     public float strength;
     [Header("挖矿速度")]
@@ -60,7 +64,7 @@ public class GameDateController : MonoBehaviour
     public float movespeed;
     public float criticalChance;
     public float miningFortune;
-    public float absorptionCount;
+    public float absorptionCount;//防御次数盾
     public float dimensionalPickaxeCount;
 
     public int powerCrystalNumber;
@@ -95,6 +99,8 @@ public class GameDateController : MonoBehaviour
 
     void Start()
     {
+        maxblood = blood;
+        tempAttackBonus = 0;
         var scriptobj = Resources.FindObjectsOfTypeAll<CreateInGameResource>();
         foreach (var obj in scriptobj)
         {

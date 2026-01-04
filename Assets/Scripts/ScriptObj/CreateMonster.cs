@@ -30,6 +30,10 @@ public class CreateMonster : ScriptableObject
     public int MonsterMinATK;
     [Header("怪物最大攻击力")]
     public int MonsterMaxATK;
+    [Header("怪物最小攻击概率")]
+    public int MonsterMinATKProbability;
+    [Header("怪物最大攻击概率")]
+    public int MonsterMaxATKProbability;
     [Header("怪物预制体")]
     public GameObject obj;
     [Header("怪物介绍")]

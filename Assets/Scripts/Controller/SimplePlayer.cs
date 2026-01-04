@@ -1,13 +1,17 @@
+using System.Collections;
 using UnityEngine;
 
 public class SimplePlayer : MonoBehaviour
 {
     private SimpleOre targetOre;
-    private Vector2 currentDirection = Vector2.down;
+    public Vector2 currentDirection = Vector2.down;
+
+    public static bool canmove;
 
     [Header("移动设置")]
     public float baseMoveSpeed = 5f; // 基础移动速度
-
+    [Header("超能矿石计算器")]
+    public CrystalCalc crystalCalculator;
 
     [Header("检测设置")]
     public float rayDistance = 1.5f;
@@ -16,18 +20,35 @@ public class SimplePlayer : MonoBehaviour
 
     [Header("UI引用")]
     public ResultPanelUI resultPanel; // 直接引用场景中的面板
-    public CrystalCalc crystalCalculator;
 
-    private Rigidbody2D rb;
+
+    public static Rigidbody2D rb;
     private float currentMoveSpeed; // 当前实际移动速度
     private PlayerAnimationController animationController;
-    private SpriteRenderer sr;
+    public static SpriteRenderer sr;
     private bool isDead = false;
+
+    private static SimplePlayer instance;
+    public static SimplePlayer Instance
+    {
+        get
+        {
+            if (instance == null)
+            {
+                instance = FindObjectOfType<SimplePlayer>();
+                if (instance == null)
+                {
+                    Debug.Log("No SimplePlayer!");
+                }
+            }
+            return instance;
+        }
+    }
 
 
     void Start()
     {
-        //MonsterInfoUI.Instance.monster.MonsterHP
+        canmove = true;
         rb = GetComponent<Rigidbody2D>();
         sr=transform.GetChild(0).GetComponent<SpriteRenderer>();
 
@@ -52,16 +73,28 @@ public class SimplePlayer : MonoBehaviour
         // 实时更新移动速度（确保movespeed变化时立即生效）
         UpdateMoveSpeedFromController();
 
-        HandleMovement();
+        if (canmove)
+        {
+            HandleMovement();
 
-        // 转向
-        HandleDirectionInput();
+            // 转向
+            HandleDirectionInput();
+
+            float h = Input.GetAxis("Horizontal");
+            if (h != 0)
+            {
+                sr.flipX = h > 0;
+            }
+        }
 
         // 找矿石
         FindOre();
 
         // 挖矿控制
-        HandleDigging();
+        if (canmove)
+        {
+            HandleDigging();
+        }
 
         // 可视化射线
         Vector2 rayStart = (Vector2)transform.position + currentDirection * rayStartOffset;
@@ -77,12 +110,6 @@ public class SimplePlayer : MonoBehaviour
             {
                 animationController.StartMiningAnimation();
             }
-        }
-
-        float h = Input.GetAxis("Horizontal");
-        if (h != 0)
-        {
-            sr.flipX = h > 0;
         }
 
         // 检查生命值
@@ -174,24 +201,24 @@ public class SimplePlayer : MonoBehaviour
             return;
         }
 
-        if (Input.GetKey(KeyCode.J))
-        {
-            targetOre.StartDigging();
-            // 开始挖矿动画
-            if (animationController != null)
+            if (Input.GetKey(KeyCode.J))
             {
-                animationController.StartMiningAnimation();
+                targetOre.StartDigging();
+                // 开始挖矿动画
+                if (animationController != null)
+                {
+                    animationController.StartMiningAnimation();
+                }
             }
-        }
-        else if (Input.GetKeyUp(KeyCode.J))
-        {
-            targetOre.StopDigging();
-            // 停止挖矿动画
-            if (animationController != null)
+            else if (Input.GetKeyUp(KeyCode.J))
             {
-                animationController.StopMiningAnimation();
+                targetOre.StopDigging();
+                // 停止挖矿动画
+                if (animationController != null)
+                {
+                    animationController.StopMiningAnimation();
+                }
             }
-        }
     }
 
     Color GetDirectionColor()
@@ -202,15 +229,58 @@ public class SimplePlayer : MonoBehaviour
         return Color.white;
     }
 
+
+    public static IEnumerator PlayerHurt(int damage)
+    {
+        Color color = damage > 0 ? Color.red : Color.green;
+        sr.color = color;
+        yield return new WaitForSeconds(0.25f);
+        sr.color = Color.white;
+        yield break;
+    }
+
     // 受到伤害
     public void TakeDamage(int damage)
     {
-        if (isDead) return;
+        if (instance.isDead) return;
+        StartCoroutine(PlayerHurt(damage));
+        StartCoroutine(Takedamage(damage));
+    }
 
+    IEnumerator Takedamage(int damage)
+    {
+        damage=Mathf.Clamp(damage, (int)(GameDateController.Instance.blood-GameDateController.Instance.maxblood), (int)GameDateController.Instance.blood);
+        Color color=damage>=0 ? Color.red : Color.green;
+        UIManager.Instance.bloodText.color = color;
         GameDateController.Instance.blood -= damage;
-        Debug.Log($"玩家受到{damage}点伤害，剩余生命值: {GameDateController.Instance.blood}");
+        instance.CheckHealth();
+        yield return new WaitForSeconds(0.25f);
+        UIManager.Instance.bloodText.color = Color.white;
+        yield return new WaitForSeconds(0.25f);
+        UIManager.Instance.bloodText.color = color;
+        yield return new WaitForSeconds(0.25f);
+        UIManager.Instance.bloodText.color = Color.white;
+        yield break;
+    }
 
-        CheckHealth();
+    public void AddATK(int num)
+    {
+        StartCoroutine(AddaTK(num));
+    }
+
+    IEnumerator AddaTK(int num)
+    {
+        num = Mathf.Clamp(num, (int)(1-GameDateController.Instance.attack- GameDateController.Instance.tempAttackBonus ), (int)(99 - GameDateController.Instance.attack- GameDateController.Instance.tempAttackBonus));
+        Color color = num >= 0 ? Color.green : Color.red;
+        BattleController.Instance.playerATKtext.color = color;
+        GameDateController.Instance.tempAttackBonus+=num;
+        yield return new WaitForSeconds(0.25f);
+        UIManager.Instance.attackText.color = Color.white;
+        yield return new WaitForSeconds(0.25f);
+        UIManager.Instance.attackText.color = color;
+        yield return new WaitForSeconds(0.25f);
+        UIManager.Instance.attackText.color = Color.white;
+        yield break;
     }
 
     // 检查生命值
@@ -249,12 +319,6 @@ public class SimplePlayer : MonoBehaviour
         ShowDefeat();
     }
 
-    // 显示失败面板
-    // 显示失败面板
-    
-
-    // 计算获得的超能矿石
-    // 计算获得的超能矿石（修正版）
     int CalculateOreGained()
     {
         // 如果有计算器，使用计算器
@@ -309,7 +373,6 @@ public class SimplePlayer : MonoBehaviour
 
             // 设置矿石数量并显示
             resultPanel.number = crystalCount;
-            resultPanel.gameObject.SetActive(true);
             resultPanel.ShowDefeat(crystalCount);
         }
         else
@@ -317,6 +380,7 @@ public class SimplePlayer : MonoBehaviour
             Debug.LogError("结果面板引用未设置！");
         }
     }
+
     // 获取当前移动速度
     public float GetCurrentMoveSpeed()
     {

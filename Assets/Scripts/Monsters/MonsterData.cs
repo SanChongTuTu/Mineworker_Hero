@@ -7,29 +7,9 @@ using UnityEngine.UI;
         [Header("怪物初始资源")]
         public Monster monster;
 
-        [Header("结算UI引用")]
-        public ResultPanelUI resultPanel; 
-
-        [Header("矿石计算器")]
-        public CrystalCalc crystalCalculator;
-
         void Start()
         {
-            // 如果没在Inspector中设置，自动查找
-            if (resultPanel == null)
-            {
-                resultPanel = FindObjectOfType<ResultPanelUI>();
-            }
-
-            if (crystalCalculator == null)
-            {
-                crystalCalculator = FindObjectOfType<CrystalCalc>();
-            }
-
-            if (resultPanel == null)
-            {
-                Debug.LogError("未找到 ResultPanelUI！请确保场景中有该对象。");
-            }
+            
         }
 
       
@@ -51,15 +31,15 @@ using UnityEngine.UI;
         Debug.Log("怪物死亡！");
 
         // 显示胜利面板
-        if (resultPanel != null)
+        if (SimplePlayer.Instance.resultPanel != null)
         {
             // 计算获得的超能矿石
             int crystalCount = CalculateVictoryCrystals();
 
             // 设置并显示胜利面板
-            resultPanel.number = crystalCount;
-            resultPanel.gameObject.SetActive(true);
-            resultPanel.ShowVictory(crystalCount);
+            SimplePlayer.Instance.resultPanel.number = crystalCount;
+            SimplePlayer.Instance.resultPanel.panel.SetActive(true);
+            SimplePlayer.Instance.resultPanel.ShowVictory(crystalCount);
         }
         else
         {
@@ -71,7 +51,7 @@ using UnityEngine.UI;
     // 计算胜利时获得的超能矿石
     int CalculateVictoryCrystals()
     {
-        if (crystalCalculator != null)
+        if (SimplePlayer.Instance.crystalCalculator != null)
         {
             // 需要获取当前层数和其他信息
             int currentLayer = 1; // 假设是第一层，根据实际情况调整
@@ -79,7 +59,7 @@ using UnityEngine.UI;
             int monsterCurrentHP = 0; // 怪物死亡时当前血量为0
             bool isDefeated = true; // 击败了怪物
 
-            return crystalCalculator.CalcLayerCrystals(
+            return SimplePlayer.Instance.crystalCalculator.CalcLayerCrystals(
                 currentLayer,
                 monsterMaxHP,
                 monsterCurrentHP,

@@ -12,6 +12,7 @@ public class Unlock : MonoBehaviour
     [SerializeField] private string crystalFileName;
 
     public GameObject notEnoughPCPanel;
+    public GameObject Tip;
     
     [Header("Currency UI")]
     public TMP_Text globalCrystalText;
@@ -27,7 +28,12 @@ public class Unlock : MonoBehaviour
     private int _powerCrystalNumber;
     
     private ShowInfo _showInfo;
-    
+
+    private void Start()
+    {
+        RefreshCurrencyUI();
+    }
+
     private void RefreshCurrencyUI()
     {
         if (globalCrystalText == null) return;
@@ -46,29 +52,44 @@ public class Unlock : MonoBehaviour
         if (CheckStatus(skill))
         {
             Debug.Log("Skill is already active");
-            return;
         }
 
         if (!IsAnyParentUnlocked())
         {
-            Debug.Log("No valid parent skill is unlocked. Cannot unlock.");
+            notEnoughPCPanel.SetActive(false);
+            Tip.SetActive(true);
+            await Task.Delay(3000);
+            if (Tip == null) return;
+            Tip.SetActive(false);
+            RefreshCurrencyUI();
             return;
         }
-        
+
         List<PowerCrystalInputEntry> powerCrystalEntries = FileHandler.LoadFromJSON<PowerCrystalInputEntry>(crystalFileName);
         var crystalEntry = powerCrystalEntries.FirstOrDefault();
-        
         if (crystalEntry != null)
         {
             if (crystalEntry.number < unlockCost)
             {
-                Debug.Log($"Not enough Power Crystals! Cost: {unlockCost}, Current: {crystalEntry.number}");
-                notEnoughPCPanel.SetActive(true);
-                await Task.Delay(3000);
-                notEnoughPCPanel.SetActive(false);
-                RefreshCurrencyUI();
-                return;
+                if (notEnoughPCPanel != null)
+                {
+                    Debug.Log($"Not enough Power Crystals! Cost: {unlockCost}, Current: {crystalEntry.number}");
+                    Tip.SetActive(false);
+                    notEnoughPCPanel.SetActive(true);
+                    await Task.Delay(3000);
+                    if (notEnoughPCPanel == null) return;
+                    notEnoughPCPanel.SetActive(false);
+                    RefreshCurrencyUI();
+                    return;
+
+                }
             }
+        }
+       
+        
+        if (crystalEntry != null)
+        {
+
             
             crystalEntry.number -= unlockCost;
             _powerCrystalNumber = crystalEntry.number;

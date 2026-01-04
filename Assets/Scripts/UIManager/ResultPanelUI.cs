@@ -6,7 +6,9 @@ using System.ComponentModel;
 
 public class ResultPanelUI : MonoBehaviour
 {
+    public GameObject panel;
     public TextMeshProUGUI numberText;  // 显示数字的Text组件
+    public TextMeshProUGUI resultText;
     public Button returnButton;  // 返回按钮（始终显示）
     public Button nextButton;    // 下一关按钮（胜利时显示）
     public int number;
@@ -14,19 +16,21 @@ public class ResultPanelUI : MonoBehaviour
 
     void Start()
     {
-        // 初始隐藏
-        //gameObject.SetActive(false);
+        
+        panel.SetActive(false);
 
         // 设置按钮监听
         if (returnButton != null)
             returnButton.onClick.AddListener(() => {
                 Time.timeScale = 1;
+                SceneController.Instance.ToScene(0);
             });
 
         if (nextButton != null)
             nextButton.onClick.AddListener(() =>
             {
                 Time.timeScale = 1;
+                SceneController.Instance.ToScene((int)SceneController.Instance.nowscene+1);
             });
 
         // 初始隐藏下一关按钮
@@ -37,27 +41,49 @@ public class ResultPanelUI : MonoBehaviour
     // 显示胜利界面（两个按钮）
     public void ShowVictory(int crystalCount)
     {
+        StartCoroutine(Showvictory(crystalCount));
+    }
+
+    IEnumerator Showvictory(int crystalCount)
+    {
+        yield return new WaitForSeconds(2);
+        SimplePlayer.Instance.resultPanel.panel.SetActive(true);
+        resultText.text = "战斗胜利！";
+        resultText.color = Color.green;
         number = crystalCount;
-        Time.timeScale= 0;
+        PowerCrystalManager.AddCrystals("powerCrystalStats.json", number);
         gameObject.SetActive(true);
 
-        if (nextButton != null)
+        if (nextButton != null && SceneController.Instance.nowscene != SceneController.NowScene.Game3)
             nextButton.gameObject.SetActive(true);
 
         StartCounting();
+
+        yield break;
     }
 
     // 显示失败界面（一个按钮）
     public void ShowDefeat(int crystalCount)
     {
+        StartCoroutine(Showdefeat(crystalCount));
+    }
+
+    IEnumerator Showdefeat(int crystalCount)
+    {
+        yield return new WaitForSeconds(2);
+        SimplePlayer.Instance.resultPanel.panel.SetActive(true);
+        resultText.text = "战斗失败！";
+        resultText.color = Color.red;
         number = crystalCount;
-        Time.timeScale = 0;
+        PowerCrystalManager.AddCrystals("powerCrystalStats.json", number);
         gameObject.SetActive(true);
 
         if (nextButton != null)
             nextButton.gameObject.SetActive(false);
 
         StartCounting();
+
+        yield break;
     }
 
     // 隐藏界面

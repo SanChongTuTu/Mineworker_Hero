@@ -178,6 +178,9 @@ MonoBehaviour:
   MonsterName: 
   MonsterHP: 0
   MonsterATK: 0
+  MonsterATKProbability: 0
+  MonsterCharacter: 0
+  monsterChooseSkill: 0
 --- !u!114 &-9098557737475939877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,11 +188,9 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1233764908564305266}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb05a1c394102a489e124dfee492b15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   monster: {fileID: 0}
-  resultPanel: {fileID: 0}
-  crystalCalculator: {fileID: 0}

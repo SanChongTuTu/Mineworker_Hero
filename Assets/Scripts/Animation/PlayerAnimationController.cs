@@ -9,6 +9,7 @@ public class PlayerAnimationController : MonoBehaviour
     // 动画参数ID（性能更好）
     private readonly int isMovingHash = Animator.StringToHash("IsMoving");
     private readonly int isMiningHash = Animator.StringToHash("IsMining");
+    private readonly int isDownMiningHash = Animator.StringToHash("IsDownMining");
 
     void Start()
     {
@@ -60,9 +61,12 @@ public class PlayerAnimationController : MonoBehaviour
     bool IsPlayerMining()
     {
         // 检查是否按着挖矿键
-        if (Input.GetKey(KeyCode.J))
+        if (SimplePlayer.canmove)
         {
-            return true;
+            if (Input.GetKey(KeyCode.J))
+            {
+                return true;
+            }
         }
 
         // 或者检查是否有目标矿石正在被挖掘
@@ -77,23 +81,41 @@ public class PlayerAnimationController : MonoBehaviour
         if (isMining)
         {
             animator.SetBool(isMiningHash, true);
+            if(SimplePlayer.Instance.currentDirection == Vector2.down)
+            {
+                animator.SetBool(isDownMiningHash, true);
+            }
+            else
+            {
+                animator.SetBool(isDownMiningHash, false);
+            }
             animator.SetBool(isMovingHash, false);
         }
         else if (isMoving)
         {
             animator.SetBool(isMovingHash, true);
             animator.SetBool(isMiningHash, false);
+            animator.SetBool(isDownMiningHash, false);
         }
         else
         {
             animator.SetBool(isMovingHash, false);
             animator.SetBool(isMiningHash, false);
+            animator.SetBool(isDownMiningHash, false);
         }
     }
 
     // 外部调用：强制设置挖矿动画
     public void StartMiningAnimation()
     {
+        if (SimplePlayer.Instance.currentDirection == Vector2.down)
+        {
+            animator.SetBool(isDownMiningHash, true);
+        }
+        else
+        {
+            animator.SetBool(isDownMiningHash, false);
+        }
         animator.SetBool(isMiningHash, true);
         animator.SetBool(isMovingHash, false);
     }
@@ -102,6 +124,7 @@ public class PlayerAnimationController : MonoBehaviour
     public void StopMiningAnimation()
     {
         animator.SetBool(isMiningHash, false);
+        animator.SetBool(isDownMiningHash, false);
     }
 
     // 外部调用：开始移动动画
@@ -109,6 +132,7 @@ public class PlayerAnimationController : MonoBehaviour
     {
         animator.SetBool(isMovingHash, true);
         animator.SetBool(isMiningHash, false);
+        animator.SetBool(isDownMiningHash, false);
     }
 
     // 外部调用：停止移动动画
@@ -121,7 +145,7 @@ public class PlayerAnimationController : MonoBehaviour
     public string GetCurrentState()
     {
         if (animator == null) return "Idle";
-        if (animator.GetBool(isMiningHash))
+        if (animator.GetBool(isMiningHash) || animator.GetBool(isDownMiningHash))
             return "Mining";
         if (animator.GetBool(isMovingHash))
             return "Moving";
