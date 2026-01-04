@@ -19,6 +19,7 @@ public class MonsterInfoUI : MonoBehaviour
     public Image healthbarquick; // 血条填充图片
     public Image healthbarslow;  // 血条慢速填充图片
     public TextMeshProUGUI bloodtext;
+    public TextMeshProUGUI useskillname;//使用技能名称显示
     [Header("UI提示框")]
     //public GameObject resultPanelPrefab; // 结果面板预制体
 
@@ -55,12 +56,19 @@ public class MonsterInfoUI : MonoBehaviour
 
     void Start()
     {
+        useskillname.gameObject.SetActive(false);
         // 初始显示第1层随机怪物
         ShowRandomMonsterForFloor(currentFloor);
 
         healthbarquick.rectTransform.sizeDelta = new Vector2(0, 30);
         healthbarslow.rectTransform.sizeDelta = new Vector2(0, 30);
         bloodtext.gameObject.SetActive(false);
+    }
+
+    public void ShowUseSkill(string skillName)
+    {
+        useskillname.text = skillName;
+        useskillname.gameObject.SetActive(true);
     }
 
     public void Decreaseblood(float num)
@@ -119,7 +127,7 @@ public class MonsterInfoUI : MonoBehaviour
 
         GameObject summonobj=Instantiate(currentMonsterData.obj, new Vector3(3, -41, 0), new Quaternion(0, 0, 0, 0));
         monster=summonobj.GetComponent<Monster>();
-
+        monster.ResetMonster();
 
         // 更新UI
         UpdateUI();
@@ -187,7 +195,7 @@ public class MonsterInfoUI : MonoBehaviour
             // 注意：策划案要求怪物属性在一定范围内随机
             // 但你的CreateMonster已经有固定值，这里可以：
             // 1. 直接使用固定值
-            healthText.text = $" {monster.maxblood}";
+            healthText.text = $"{monster.maxblood}";
 
             // 2. 或者在范围内随机（如果需要随机的话）
             // int randomHP = GetRandomMonsterHP(currentFloor);
@@ -197,7 +205,7 @@ public class MonsterInfoUI : MonoBehaviour
         // 攻击力
         if (attackText != null)
         {
-            attackText.text = $" {monster.maxattack}";
+            attackText.text = $"{monster.maxattack}";
         }
 
         // 怪物介绍/特殊特征
@@ -241,33 +249,4 @@ public class MonsterInfoUI : MonoBehaviour
         return currentMonsterData;
     }
 
-    //// 怪物死亡
-    //void OnDeath()
-    //{
-    //    Debug.Log("怪物死亡");
-    //    ShowResultPanel("胜利");
-    //}
-
-    //// 玩家死亡（可以从其他脚本调用）
-    //public void PlayerDeath()
-    //{
-    //    ShowResultPanel("失败");
-    //}
-
-    //// 显示结果面板
-    //void ShowResultPanel(string result)
-    //{
-    //    if (resultPanelPrefab != null)
-    //    {
-    //        GameObject panel = Instantiate(resultPanelPrefab, Vector3.zero, Quaternion.identity);
-    //        panel.transform.SetParent(GameObject.Find("Canvas").transform, false); // 假设Canvas在场景中
-
-    //        // 设置面板文本和按钮（需要UI脚本支持）
-    //        //ResultPanelUI panelUI = panel.GetComponent<ResultPanelUI>();
-    //        //if (panelUI != null)
-    //        //{
-    //        //    panelUI.SetResultText(result);
-    //        //}
-    //    }
-    //}
 }

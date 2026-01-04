@@ -31,6 +31,22 @@ public class FMineModeManager : MonoBehaviour
 
     }
 
+    private void Start()
+    {
+        if (FindObjectOfType<GameDateController>() != null)
+        {
+            if (GameDateController.Instance.dimensionalPickaxeCount > 0)
+            {
+                CameraController.Instance.activeskill.SetActive(true);
+            }
+            else
+            {
+                CameraController.Instance.activeskill.SetActive(false);
+                enabled = false;
+            }
+        }
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.F))

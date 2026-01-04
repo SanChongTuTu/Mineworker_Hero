@@ -35,6 +35,7 @@ public class OreDropSpawner : MonoBehaviour
 
     public void DropOreIcon(SimpleOre targetOre,bool bymouse)
     {
+        VoiceController.Instance.PlayHit();
         SimpleOre.OreType theoreType = targetOre.oreType;
         bool ismouse = bymouse;
         switch (theoreType)
@@ -58,7 +59,7 @@ public class OreDropSpawner : MonoBehaviour
                 }
                 else
                 {
-                    StartCoroutine(SimplePlayer.PlayerHurt());
+                    //StartCoroutine(SimplePlayer.PlayerHurt());
                     ApplyOreEffect(theoreType, ismouse);
                 }
                 return;
@@ -84,11 +85,29 @@ public class OreDropSpawner : MonoBehaviour
 
             case OreType.Ruby:
                 GameDateController.Instance.blood += 2;
+                if (GameDateController.Instance.miningFortune - 1 > 0)
+                {
+                    int randnum = Random.Range(1, 5);
+                    if (randnum == 1)
+                    {
+                        GameDateController.Instance.blood += 1;
+                        Debug.Log($"挖矿幸运触发！红宝石额外生命值+1");
+                    }
+                }
                 Debug.Log($"红宝石！生命值+2");
                 break;
 
             case OreType.Blue:
                 GameDateController.Instance.attack += 1;
+                if (GameDateController.Instance.miningFortune - 1 > 0)
+                {
+                    int randnum = Random.Range(1, 5);
+                    if (randnum == 1)
+                    {
+                        GameDateController.Instance.attack += 1;
+                        Debug.Log($"挖矿幸运触发！蓝宝石额外生命值+1");
+                    }
+                }
                 Debug.Log($"蓝宝石！攻击力+1");
                 break;
 
@@ -111,7 +130,8 @@ public class OreDropSpawner : MonoBehaviour
                 {
                     if (GameDateController.Instance.blood > 1)
                     {
-                        GameDateController.Instance.blood -= 1;
+                        GameDateController.Instance.maxblood = GameDateController.Instance.blood;
+                        SimplePlayer.Instance.TakeDamage(1);
                         Debug.Log($"键盘挖掉熔岩块！生命值-1");
                     }
                     else

@@ -27,7 +27,9 @@ public class SceneController : MonoBehaviour
     {
         Start = 0,
         SkillTree = 1,
-        Game = 2
+        Game1 = 2,
+        Game2=3,
+        Game3=4,
     }
 
     [Header("µ±Ç°³¡¾°")]
@@ -55,6 +57,7 @@ public class SceneController : MonoBehaviour
 
     public void ToScene(int id)
     {
+        GameDateController.Instance.tempAttackBonus = 0;
         sceneshader.SetActive(true);
         Time.timeScale = 1;
         sceneshader.GetComponent<CanvasGroup>().alpha = 0;
@@ -76,7 +79,7 @@ public class SceneController : MonoBehaviour
 
 
         SceneManager.LoadScene(id);
-        nowscene = (NowScene)SceneManager.GetActiveScene().buildIndex;
+        nowscene = (NowScene)id;
         PlayerSet.Instance.ifbackhome.SetActive(false);
         PlayerSet.Instance.sets.SetActive(false);
         yield return new WaitForSeconds(fadetime);

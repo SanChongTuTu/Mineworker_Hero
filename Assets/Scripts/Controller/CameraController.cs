@@ -89,9 +89,12 @@ public class CameraController : MonoBehaviour
 
     void MoveToTargetUpdate()
     {
+        if(GameDateController.Instance!=null)
+        GameDateController.Instance.maxblood = GameDateController.Instance.blood;
         SimplePlayer.canmove = false;
         FMineModeManager.Instance.skillimage.color = Color.grey;
         FMineModeManager.Instance.skilltext.color = Color.grey;
+        if(MouseCursorChanger.Instance != null )
         MouseCursorChanger.Instance.RestoreDefault();
         FMineModeManager.Instance.enabled = false;
         activeskill.SetActive(false);

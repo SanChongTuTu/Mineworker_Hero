@@ -26,7 +26,8 @@ public class Bat : Monster
         }
         else
         {
-            monsterChooseSkill = ChooseSkill.defence;
+            int randnum = Random.Range(0, 2);
+            monsterChooseSkill = randnum == 0 ? ChooseSkill.defence : ChooseSkill.none;
         }
     }
 }
